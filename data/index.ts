@@ -1,9 +1,365 @@
+import {
+  css,
+  docker,
+  figma,
+  git,
+  dotnet,
+  html,
+  javascript,
+  mongodb,
+  nodejs,
+  python,
+  Cplus,
+  redux,
+  tailwind,
+  typescript,
+  threejs,
+  postgress,
+  sqlserver,
+  Csharp,
+  django,
+  nextjs,
+  reactjs,
+  postman,
+  github,
+  REST,
+  https,
+  nuget,
+  vite,
+  grpc,
+  graph,
+  openapi,
+  swag,
+  
+} from "@/assets";
+
+
+
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "About Me", link: "/About" },
+  { name: "Projects", link: "/Projects" },
+  { name: "Tech & Stack", link: "/Tech" },
   { name: "Contact", link: "#contact" },
 ];
+export const PnavItems = [
+  { name: " درمورد من", link: "/Pe/About" },
+  { name: "پروژه ها", link: "/Pe/Projects" },
+  { name: "زبان و تکنولوژی", link: "/Pe/Tech" },
+  { name: "تماس با ما", link: "#contact" },
+];
+
+
+export const expCards = [
+  {
+    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    imgPath: "/images/exp1.png",
+    logoPath: "/images/logo1.png",
+    title: "Frontend Developer",
+    date: "2020 - 2021",
+    responsibilities: [
+      "HTML , CSS , JS , SASS , TS .",
+      "Security , Web Vitals , performance  , Responsiveness , UI UX ,",
+      "CCNA , SAAS  , GIt ,  Git HUb ",
+    ],
+  },
+  {
+    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/logo2.png",
+    title: "Full Stack Developer",
+    date: "2021 - 2022",
+    responsibilities: [
+      "python ,django , flask , jinja , SQlserver",
+      "API , MVC , minimal Api",
+      "learning ML (machin learning ) AI  , data analysis",
+    ],
+  },
+  {
+    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    imgPath: "/images/exp3.png",
+    logoPath: "/images/logo3.png",
+    title: "React Native Developer",
+    date: "2022 - 2023",
+    responsibilities: [
+      "Started to learn new things and finally things are coming together",
+      "React , Next js  , Vue js , Express , PWA , MongoDb , SEO",
+      "making fullstack apllications with full authentication with jwt and authorization , plus practical seo and performance optimizations.",
+    ],
+  },
+  {
+    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    imgPath: "/images/exp3.png",
+    logoPath: "/images/logo3.png",
+    title: ".NET",
+    date: "2023 - 2024",
+    responsibilities: [
+      ".NET , ASP.NET , MVC minimal API  , Web API , Postgress , SQLserver , EF , SWagger , OpenApi , .NEt 8 , .Net 9 , DI ",
+      "SOLID , DRY , KISS , DDD , YAGNI",
+      "clean architecture , service architecture ",
+      "Singleton Repository  Retries with exponential backoff  Circuit breaker Publisher-subscriber",
+    ],
+  },
+];
+
+export const PexpCards = [
+  
+  {
+    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/logo2.png",
+    title: "Starting with FrontEnd",
+    date: " 2020 - 2021 ",
+    responsibilities: [
+      " HTML , CSS , JS , SASS , TS ,   یادگیری  ",
+      "Security , Web Vitals , performance  , Responsiveness , UI UX ,  ساخت انواع تمپلیت های فرانت اند با دیزاین های مختلف رعایت اصول   ",
+      "CCNA , SAAS  , GIt ,  Git HUb یادگیری علوم مرطبت     ",
+    ],
+  },
+  {
+    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    imgPath: "/images/exp1.png",
+    logoPath: "/images/logo1.png",
+    title: "BackEnd Development",
+    date: " 2021 - 2022",
+    responsibilities: [
+      " python ,django , flask , jinja , SQlserver , یادگیری استک ",
+      " API , MVC , minimal Api ساخت  ",
+      "یادگیری اصول اولیه هوش مصنوعی و یادگیری ماشین و تحلیل داده",
+    ],
+  },
+  {
+    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    imgPath: "/images/exp3.png",
+    logoPath: "/images/logo3.png",
+    title: "FullStack development",
+    date: " 2022 - 2023",
+    responsibilities: [
+      "  . شروع یادگیری تکنولوژی های تازه تر و ادغام انها باهم . یادگیری طراحی سیستم ",
+      "یادگیری React , Next js  , Vue js , Express , PWA , MongoDb , SEO ",
+      "ساخت اپلیکیشن های مختلف از اول تا اخر با استک های مختلف اپتیمایز شده برای سعو . ساخت (پی دابلیو ای ) سیستم های احراز هویت ( جی دابلیو تی )",
+    ],
+  },
+  {
+    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/logo2.png",
+    title: ".NET Stack",
+    date: " 2023 - 2024 ",
+    responsibilities: [
+      " .NET , ASP.NET , MVC minimal API  , Web API , Postgress , SQLserver , EF , SWagger , OpenApi , .NEt 8 , .Net 9 , DI  علاقه مند شدن و یادگیری  ",
+      "SOLID , DRY , KISS , DDD , YAGNI یادگیری اصول   ",
+      " clean architecture , service architecture , یادگیری علوم مرطبت     ",
+      "  Singleton Repository  Retries with exponential backoff  Circuit breaker Publisher-subscriber   ",
+    ],
+  },
+];
+
+export const technologies = [
+
+
+
+ 
+  {
+    name: "sqlserver",
+    icon: sqlserver,
+  },
+   {
+    name: "postgress",
+    icon: postgress,
+  },
+
+
+
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+];
+
+export const LanguagesTech = [
+  
+  
+ 
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "C#",
+    icon: Csharp,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+ 
+  {
+    name: "C++",
+    icon: Cplus,
+  },
+  
+];
+export const Lib = [
+  
+    {
+    name: "Node JS",
+    icon: nodejs,
+  }, 
+  {
+    name: ".Net",
+    icon: dotnet,
+  },
+  
+  {
+    name: "Nextjs",
+    icon: nextjs,
+  },
+  {
+    name: "Django",
+    icon: django,
+  },
+ 
+ 
+ 
+  
+];
+export const Tool = [
+  
+    {
+    name: "Git",
+    icon: git,
+  }, 
+    {
+    name: "postman",
+    icon: postman,
+  }, 
+    {
+    name: "github",
+    icon: github,
+  }, 
+
+ 
+  
+];
+export const TWeb = [
+  
+    {
+    name: "Html",
+    icon: html,
+  }, 
+    {
+    name: "css",
+    icon: css,
+  }, 
+    {
+    name: "js",
+    icon: javascript,
+  }, 
+  {
+    name: "React",
+    icon: reactjs,
+  },
+
+ 
+  
+];
+
+
+export const TPackages = [
+  
+    {
+    name: "nuget",
+    icon: nuget,
+  }, 
+    {
+    name: "docker",
+    icon: docker,
+  }, 
+  
+    {
+    name: "nodejs",
+    icon: nodejs,
+  }, 
+    {
+    name: "vite",
+    icon: vite,
+  }, 
+
+ 
+ 
+  
+];
+export const TApi = [
+  
+    {
+    name: "grpc",
+    icon: grpc,
+  }, 
+    {
+    name: "graph",
+    icon: graph,
+  }, 
+  
+    {
+    name: "openapi",
+    icon: openapi,
+  }, 
+    {
+    name: "swag",
+    icon: swag,
+  }, 
+  {
+    name: "REST",
+    icon: REST,
+  }, 
+ 
+ 
+  
+];
+
+
+
+
+export const PaginationItems = [
+ {
+  pageNumber: 1,
+  pageURl: '/Tech'
+ },
+ {
+  pageNumber: 2,
+  pageURl: '/TechTwo'
+ },
+ {
+  pageNumber: 3,
+  pageURl: '/TechThree'
+ },
+ {
+  pageNumber: 4,
+  pageURl: '/TechFour'
+ },
+ 
+
+]
+export const PPaginationItems = [
+ {
+  pageNumber: 1,
+  pageURl: '/Pe/Tech'
+ },
+ {
+  pageNumber: 2,
+  pageURl: '/Pe/TechTwo'
+ },
+ {
+  pageNumber: 3,
+  pageURl: '/Pe/TechThree'
+ },
+ {
+  pageNumber: 4,
+  pageURl: '/Pe/TechFour'
+ },
+ 
+
+]
 
 export const gridItems = [
   {
@@ -178,8 +534,77 @@ export const projects = [
     link: "/ui.apple.com",
   },
 ];
+export const Allprojects = [
+  {
+    id: 1,
+    title: "3D Solar System Planets to Explore",
+    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "/ui.earth.com",
+  },
+  {
+    id: 2,
+    title: "Yoom - Video Conferencing App",
+    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    img: "/p2.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "/ui.yoom.com",
+  },
+  {
+    id: 3,
+    title: "AI Image SaaS - Canva Application",
+    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    img: "/p3.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "/ui.aiimg.com",
+  },
+  {
+    id: 4,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/ui.apple.com",
+  },
+
+];
 
 export const Pprojects = [
+  {
+    id: 1,
+    title: "اتو گالری",
+    des: "اتوگالری با قابلیت رزرو ماشین های مورد نظر , سیستم تایید و احراز هویت و داشبورد اختصاصی",
+    img: "/autog.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://pizza-one-rose.vercel.app/",
+  },
+  {
+    id: 2,
+    title: " سهام هارا بدون اخبار با این اپ دنبال کنید",
+    des: " SPA اپلیکیشن با دو استک کاملا متفاوت  با احراز هویت فرانت ریکت ",
+    img: "/Stock.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "https://stockfront-eight.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "اپ مدیرت پروژه ",
+    des: "اپلیکیشن برای مدیریت , دسته بندی , سپردن وظیفه و راه ارتباطی زنده ی پروژه های مختلف به صورت پیام رسان ",
+    img: "/management.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "https://the-dojo-1e333.firebaseapp.com/",
+  },
+  {
+    id: 4,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/ui.apple.com",
+  },
+];
+export const AllPprojects = [
   {
     id: 1,
     title: "اتو گالری",

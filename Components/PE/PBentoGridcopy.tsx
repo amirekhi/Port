@@ -192,6 +192,7 @@ export const PBentoGridItemc = ({
                 position="left"
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
+                buttonClasses="md:w-60 "
               />
             </div>
           )}

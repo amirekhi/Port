@@ -4,10 +4,24 @@ import MagicButton from "./MagicButton";
 import { Spotlight } from "./Ui/Spotlight";
 import { TextGenerateEffect } from "./Ui/TextGenerateEffect";
 import { GridBackgroundDemo } from "./Ui/GridBackgroundDemo";
+import { FaLanguage } from 'react-icons/fa'
+import Link from "next/link";
 
 const Hero = () => {
   return (
     <div className="pb-20 pt-36 w-[80vw] mx-auto relative ">
+      
+      <div className="absolute max-md:hidden z-50 top-0 right-0" >
+       < Link href={'/Pe'} >
+            <MagicButton
+              title="فارسی"
+              icon={<FaLanguage size={35} />}
+              position="right"
+              buttonClasses="md:w-32"
+            />
+          </Link>
+      </div>
+      
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -53,13 +67,25 @@ const Hero = () => {
             Hi! I&apos;m Amir, a Next.js Developer based in Croatia.
           </p>
 
-          <a href="#about">
+          <div className="max-md:mt-20" >
+          <Link href="/Tech">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a>
+          </Link>
+          </div>
+          <div className="mt-4 md:hidden" >
+          <Link href="/">
+              <MagicButton
+                  title="English"
+                  icon={<FaLanguage size={35} />}
+                  position="right"
+                  buttonClasses="md:w-32"
+                />
+          </Link>
+          </div>
         </div>
       </div>
     </div>

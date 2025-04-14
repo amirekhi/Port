@@ -1,13 +1,24 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLanguage, FaLocationArrow } from "react-icons/fa6";
 
 import MagicButton from "../MagicButton";
 import { Spotlight } from "../Ui/Spotlight";
 import { TextGenerateEffect } from "../Ui/TextGenerateEffect";
 import { GridBackgroundDemo } from "../Ui/GridBackgroundDemo";
+import Link from "next/link";
 
 const PHero = () => {
   return (
     <div className="pb-20 pt-36 w-[80vw] mx-auto relative ">
+       <div className="absolute max-md:hidden z-50 top-0 right-0" >
+       < Link href={'/'} >
+            <MagicButton
+              title="English"
+              icon={<FaLanguage size={35} />}
+              position="right"
+              buttonClasses="md:w-32"
+            />
+          </Link>
+      </div>
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -49,17 +60,28 @@ const PHero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-7xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-xl lg:text-3xl text-white ">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-xl lg:text-3xl max-md:mt-5 text-white ">
            IT  سلام من امیر هستم  توسعه دهنده اپلیکیشن , مهندس  
           </p>
-
-          <a href="#about">
+          <div className="max-md:mt-20" >
+          <Link href="/Pe/Tech">
             <MagicButton
               title="کار های من"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a>
+          </Link>
+          </div>
+          <div className="mt-4 md:hidden" >
+          <Link href="/">
+              <MagicButton
+                  title="English"
+                  icon={<FaLanguage size={35} />}
+                  position="right"
+                  buttonClasses="md:w-32"
+                />
+          </Link>
+          </div>
         </div>
       </div>
     </div>
