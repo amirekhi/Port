@@ -12,6 +12,7 @@ import { BackgroundGradientAnimation } from "../Ui/GradientBg";
 import GridGlobe from "../Ui/GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import Link from "next/link";
 
 export const PBentoGridc = ({
   className,
@@ -143,30 +144,30 @@ export const PBentoGridItemc = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -left-3 lg:-left-2">
               {/* tech stack lists */}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 {leftLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
+                   <Link key={i} href={"/Pe/Tech"} className="inline-block lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                   lg:opacity-100 rounded-lg text-center bg-[#10132E] hover:scale-110 transition duration-200" >
+                
+                   {item}
+                
+                 </Link>
                 ))}
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
               </div>
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
                 {rightLists.map((item, i) => (
-                  <span
+                  <Link 
+                  href={"/Pe/Tech"}
                     key={i}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E]  hover:scale-125 transition duration-200"
                   >
                     {item}
-                  </span>
+                  </Link>
                 ))}
               </div>
             </div>

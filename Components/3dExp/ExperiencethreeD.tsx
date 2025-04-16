@@ -104,7 +104,7 @@ const ExperiencethreeD = ({expCards ,classes , dir , title} : any) => {
             {expCards.map((card : any) => (
               <div key={card.title} className="flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between">
                 <div className="xl:w-2/6">
-                  <GlowCard card={card}>
+                  <GlowCard card={card} dir={dir}>
                     <div>
                       <img src={card.imgPath} alt="exp-img" />
                     </div>

@@ -39,13 +39,13 @@ export const navItems = [
   { name: "About Me", link: "/About" },
   { name: "Projects", link: "/Projects" },
   { name: "Tech & Stack", link: "/Tech" },
-  { name: "Contact", link: "#contact" },
+  { name: "Contact", link: "ContactMe" },
 ];
 export const PnavItems = [
   { name: " درمورد من", link: "/Pe/About" },
   { name: "پروژه ها", link: "/Pe/Projects" },
   { name: "زبان و تکنولوژی", link: "/Pe/Tech" },
-  { name: "تماس با ما", link: "#contact" },
+  { name: "تماس با من", link: "/Pe/ContactMe" },
 ];
 
 
@@ -104,7 +104,7 @@ export const expCards = [
 export const PexpCards = [
   
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "همکاری با آدریان یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق آدریان به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، آدریان شریک ایده‌آلی برای شماست.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "Starting with FrontEnd",
@@ -116,7 +116,7 @@ export const PexpCards = [
     ],
   },
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "همکاری با آدریان یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق آدریان به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، آدریان شریک ایده‌آلی برای شماست.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "BackEnd Development",
@@ -128,7 +128,7 @@ export const PexpCards = [
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review: "همکاری با آدریان یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق آدریان به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، آدریان شریک ایده‌آلی برای شماست.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     title: "FullStack development",
@@ -140,7 +140,7 @@ export const PexpCards = [
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "همکاری با آدریان یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق آدریان به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، آدریان شریک ایده‌آلی برای شماست.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: ".NET Stack",
@@ -408,7 +408,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently building a .Net Microservice with EDA ",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -642,31 +642,31 @@ export const AllPprojects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Amir was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Amir was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Amir was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Amir was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Amir was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
@@ -723,29 +723,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "FullStack Developer",
+    desc: "Developing Elegantly Designed FrontEnds and Lovely Performed Backends to go with it ",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Business engineering",
+    desc: "engineering businesses for maximum Prophit",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "SEO",
+    desc: "Designing and Engineering apps for the maximum Visibality by Serach Engines",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "System Design",
+    desc: "Designing Systems to work like a well oiled Machin , a Clock , if you wish.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

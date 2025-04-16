@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 
-const GlowCard = ({ card, children }: any) => {
+const GlowCard = ({ card, children , dir }: any) => {
   const cardRef = useRef<HTMLDivElement | null>(null);
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -24,6 +24,7 @@ const GlowCard = ({ card, children }: any) => {
       ref={cardRef}
       onMouseMove={handleMouseMove}
       className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"
+      dir={dir}
     >
       <div className="glow"></div>
       <div className="flex items-center gap-1 mb-5">
@@ -31,8 +32,8 @@ const GlowCard = ({ card, children }: any) => {
           <img key={i} src="/images/star.png" alt="star" className="size-5" />
         ))}
       </div>
-      <div className="mb-5">
-        <p className="text-white-50 text-lg">{card.review}</p>
+      <div className="mb-5" >
+        <p className={`text-white-50 text-lg `} >{card.review}</p>
       </div>
       {children}
     </div>

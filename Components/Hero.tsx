@@ -64,11 +64,11 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white ">
-            Hi! I&apos;m Amir, a Next.js Developer based in Croatia.
+            Hi! I&apos;m Amir, a Software engineer based in Tehran.
           </p>
 
           <div className="max-md:mt-20" >
-          <Link href="/Tech">
+          <Link href="/Projects">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
@@ -77,9 +77,9 @@ const Hero = () => {
           </Link>
           </div>
           <div className="mt-4 md:hidden" >
-          <Link href="/">
+          <Link href="/Pe">
               <MagicButton
-                  title="English"
+                  title="فارسی"
                   icon={<FaLanguage size={35} />}
                   position="right"
                   buttonClasses="md:w-32"

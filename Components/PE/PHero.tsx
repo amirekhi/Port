@@ -64,7 +64,7 @@ const PHero = () => {
            IT  سلام من امیر هستم  توسعه دهنده اپلیکیشن , مهندس  
           </p>
           <div className="max-md:mt-20" >
-          <Link href="/Pe/Tech">
+          <Link href="/Pe/Projects">
             <MagicButton
               title="کار های من"
               icon={<FaLocationArrow />}

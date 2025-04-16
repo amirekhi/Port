@@ -57,14 +57,14 @@ const PProjHero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words=" هر کدام از پروژه ها ی مد تظرتان را میتوانید با کلیک کردن بر روی ان دنبال کنید "
+            words=" ه پروژه های مد نظرتان را میتوانید با کلیک کردن بر روی آن دنبال کنید "
             duration={2}
              filter={false}
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white ">
-            تلاش  به نمایش کشیدن توانایی های من با استفاده از پروژه های انجام شده توسط من میباشد
+            تلاش من به نمایش کشیدن توانایی های بنده با استفاده از پروژه های انجام شده توسط اینجانب میباشد
           </p>
 
           <div className="max-md:mt-20" >
