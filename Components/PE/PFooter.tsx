@@ -3,6 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
 import MagicButton from "../MagicButton";
 import Link from "next/link";
+import Image from "next/image";
 
 const PFooter = () => {
   return (
@@ -23,13 +24,13 @@ const PFooter = () => {
         <p className="text-white md:mt-10 my-5 text-center">
          همین امروز با من تماس بگیر ,  در مورد رویا و کارت صحبت کنیم
         </p>
-        <a href="mailto:ekhiamir@gmail.com">
+        <Link href={"/Pe/ContactMe"}>
           <MagicButton
             title="با من در تماس باش "
             icon={<FaLocationArrow />}
             position="right"
           />
-        </a>
+        </Link>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
@@ -41,9 +42,9 @@ const PFooter = () => {
             <Link href={info.link} key={info.id}>
             <div
              
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              className="hover:text-white hover:scale-90 transition duration-200 ease-in w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
-              <img src={info.img} alt="icons" width={20} height={20} />
+              <Image src={info.img} alt="icons" width={20} height={20} />
             </div>
             </Link>
           ))}

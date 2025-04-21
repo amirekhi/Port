@@ -57,7 +57,7 @@ const PProjHero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words=" ه پروژه های مد نظرتان را میتوانید با کلیک کردن بر روی آن دنبال کنید "
+            words="  پروژه های مد نظرتان را میتوانید با کلیک کردن بر روی آن دنبال کنید "
             duration={2}
              filter={false}
             className="text-center text-[40px] md:text-5xl lg:text-6xl"

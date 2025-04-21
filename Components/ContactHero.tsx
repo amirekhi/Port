@@ -5,6 +5,7 @@ import { Spotlight } from './Ui/Spotlight'
 import { GridBackgroundDemo } from './Ui/GridBackgroundDemo'
 import { FaLanguage, FaWhatsapp ,FaInstagram , FaPhone, FaTelegram, FaEnvelope } from 'react-icons/fa6'
 import ContactExperience from './contact/ContactExperience'
+import { contactItems } from '@/data'
 
 
 <FaInstagram />
@@ -56,12 +57,14 @@ const ContactHero = ({ title , parag ,  dirClass , linkTxt , linkUrl} : any) => 
    <div className=" grid grid-cols-12 gap-12 max-md:gap-0 max-md:h-auto h-96  mt-[150px] text-white relative">
           <div className="col-span-5  max-md:col-span-12 max-md:h-96 h-full">
            <ul className='h-full flex justify-around items-start flex-col w-full '>
-            <li className='flex justify-between w-full '> <span>Personal Number :  09336565309</span>  <FaPhone  size={34} color='white'/></li>
-            <li className='flex justify-between w-full '> <span>WhatsApp :  09336565309</span>  <FaWhatsapp   size={34} color='white'/></li>
-            <li className='flex justify-between w-full '> <span>Telegram :  @amir44333 </span>  <FaTelegram  size={34} color='white'/></li>
-            <li className='flex justify-between w-full '> <span>Instagram :  amir_ekhi_</span>  <FaInstagram  size={34} color='white'/></li>
-            <li className='flex justify-between w-full '> <span>Email : ekhiamir@gmail.com</span>  <FaEnvelope  size={34} color='white'/></li> 
-        
+                      {contactItems.map((item, index) => (
+                        <Link href={item.href} target="_blank" rel="noopener noreferrer" key={index} className='block w-full'>
+                        <li  className="flex justify-between w-full items-center hover:bg-gradient-to-r from-purple-400 to-purple-600 transition duration-200   hover:shadow-2xl shadow-purple-200 p-4 rounded-2xl ">
+                        <span>{item.label} : {item.value}</span>
+                        <item.icon size={34} color="white" />
+                        </li>
+                        </Link>
+                      ))}
            </ul>
             
           </div>

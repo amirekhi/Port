@@ -4,12 +4,12 @@ import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
+
 
 import { cn } from "@/lib/Utils";
 
 import { BackgroundGradientAnimation } from "../Ui/GradientBg";
-import GridGlobe from "../Ui/GridGlobe";
+
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 import Link from "next/link";
@@ -69,7 +69,7 @@ export const PBentoGridItemc = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "ekhiamir@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };

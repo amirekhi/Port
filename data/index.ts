@@ -32,6 +32,40 @@ import {
   swag,
   
 } from "@/assets";
+import { FaPhone, FaWhatsapp, FaTelegram, FaInstagram, FaEnvelope } from 'react-icons/fa';
+
+export  const contactItems = [
+  {
+    label: 'Personal Number',
+    value: '09336565309',
+    icon: FaPhone,
+    href: 'tel:09336565309',
+  },
+  {
+    label: 'WhatsApp',
+    value: '09336565309',
+    icon: FaWhatsapp,
+    href: 'https://wa.me/989336565309', // add country code
+  },
+  {
+    label: 'Telegram',
+    value: '@amir44333',
+    icon: FaTelegram,
+    href: 'https://t.me/amir44333',
+  },
+  {
+    label: 'Instagram',
+    value: 'amir_ekhi_',
+    icon: FaInstagram,
+    href: 'https://instagram.com/amir_ekhi_',
+  },
+  {
+    label: 'Email',
+    value: 'ekhiamir@gmail.com',
+    icon: FaEnvelope,
+    href: 'mailto:ekhiamir@gmail.com',
+  },
+];
 
 
 
@@ -104,7 +138,7 @@ export const expCards = [
 export const PexpCards = [
   
   {
-    review: "همکاری با آدریان یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق آدریان به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، آدریان شریک ایده‌آلی برای شماست.",
+    review: "همکاری با امیر یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق امیر به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، امیر شریک ایده‌آلی برای شماست.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "Starting with FrontEnd",
@@ -116,7 +150,7 @@ export const PexpCards = [
     ],
   },
   {
-    review: "همکاری با آدریان یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق آدریان به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، آدریان شریک ایده‌آلی برای شماست.",
+    review: "همکاری با امیر یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق امیر به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، امیر شریک ایده‌آلی برای شماست.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "BackEnd Development",
@@ -128,7 +162,7 @@ export const PexpCards = [
     ],
   },
   {
-    review: "همکاری با آدریان یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق آدریان به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، آدریان شریک ایده‌آلی برای شماست.",
+    review:"همکاری با امیر یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق امیر به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، امیر شریک ایده‌آلی برای شماست.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     title: "FullStack development",
@@ -140,7 +174,7 @@ export const PexpCards = [
     ],
   },
   {
-    review: "همکاری با آدریان یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق آدریان به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، آدریان شریک ایده‌آلی برای شماست.",
+    review: "همکاری با امیر یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق امیر به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، امیر شریک ایده‌آلی برای شماست.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: ".NET Stack",
@@ -595,14 +629,7 @@ export const Pprojects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://the-dojo-1e333.firebaseapp.com/",
   },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
+
 ];
 export const AllPprojects = [
   {
@@ -629,14 +656,7 @@ export const AllPprojects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://the-dojo-1e333.firebaseapp.com/",
   },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
+ 
 ];
 
 export const testimonials = [
@@ -785,12 +805,12 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/twit.svg",
-    link: '/'
+    img: "/insta.svg",
+    link: 'https://www.instagram.com/amir_ekh_?igsh=YzU3Mnh5MWx3aXRj'
   },
   {
     id: 3,
-    img: "/link.svg",
-    link: '/'
+    img: "/telegram.svg",
+    link: 'https://t.me/amir44333'
   },
 ];
