@@ -92,7 +92,7 @@ const ExperiencethreeD = ({expCards ,classes , dir , title} : any) => {
   return (
     <section
       id="experience"
-      className="flex justify-center items-center py-20  px-5 md:px-10 md:mt-40 mt-20 xl:px-0 text-white"
+      className="flex justify-center items-center py-20  px-5 md:px-10 md:mt-40 mt-20 xl:px-0 light:text-[#3B3B3B] text-white"
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
@@ -128,7 +128,7 @@ const ExperiencethreeD = ({expCards ,classes , dir , title} : any) => {
                         <p className="text-[#839CB5] italic">
                         Accomplishments
                         </p>
-                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white">
+                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 light:text-[#3B3B3B] text-white">
                           {card.responsibilities.map(
                             (responsibility :  any, index :  any) => (
                               <li key={index} className={`text-lg ${classes} `} dir={dir} >

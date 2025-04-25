@@ -1,5 +1,5 @@
-import PPagin from "@/Components/PPagin";
-import PTechHero from "@/Components/PTechHero";
+import PPagin from "@/components/PPagin";
+import PTechHero from "@/components/PTechHero";
 
 
 export default function RootLayout({

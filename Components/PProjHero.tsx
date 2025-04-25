@@ -47,7 +47,7 @@ const PProjHero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          <p className="uppercase tracking-widest text-xs text-center light:text-[#3B3B3B] text-blue-100 max-w-80">
             پروژه های من  
           </p>
 
@@ -63,7 +63,7 @@ const PProjHero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white ">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg light:text-[#3B3B3B] lg:text-2xl text-white ">
             تلاش من به نمایش کشیدن توانایی های بنده با استفاده از پروژه های انجام شده توسط اینجانب میباشد
           </p>
 

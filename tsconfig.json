@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "Components/3dExp/ExperiencethreeD.tsx", "Components/3dExp/GlowCard.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/3dExp/ExperiencethreeD.tsx", "components/3dExp/GlowCard.tsx"],
   "exclude": ["node_modules"]
 }

@@ -6,8 +6,8 @@ import { Button } from "../Ui/MovingBorders";
 const PExperience = () => {
   return (
     <div className="py-20 w-[75vw] mx-auto">
-      <h1 className="font-bold text-4xl md:text-5xl text-center text-white">
-        <span className="text-purple-300">تجربه کاری</span> من 
+      <h1 className="font-bold text-4xl md:text-5xl text-center light:text-[#3B3B3B] text-white">
+        <span className="text-purple-300 light:text-purple-500">تجربه کاری</span> من 
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">

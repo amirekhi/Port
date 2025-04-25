@@ -1,5 +1,5 @@
-import ExperiencethreeD from '@/Components/3dExp/ExperiencethreeD'
-import AboutHero from '@/Components/AboutHero'
+import ExperiencethreeD from '@/components/3dExp/ExperiencethreeD'
+import AboutHero from '@/components/AboutHero'
 import { PexpCards } from '@/data'
 import React from 'react'
 

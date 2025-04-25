@@ -18,10 +18,10 @@ const PFooter = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <h1 className="font-bold text-4xl md:text-5xl text-center text-white lg:max-w-[45vw]">
+        <h1 className="font-bold text-4xl md:text-5xl text-center light:text-[#3B3B3B] light:text-purple-500  text-white lg:max-w-[45vw]">
         اماده ای تا بیزینست رو با دنیای دیجیتال  به یه لول دیگه ارتقا بدی ؟
         </h1>
-        <p className="text-white md:mt-10 my-5 text-center">
+        <p className="text-white light:text-purple-500 light:text-[#3B3B3B] md:mt-10 my-5 text-center">
          همین امروز با من تماس بگیر ,  در مورد رویا و کارت صحبت کنیم
         </p>
         <Link href={"/Pe/ContactMe"}>
@@ -41,11 +41,11 @@ const PFooter = () => {
           {socialMedia.map((info) => (
             <Link href={info.link} key={info.id}>
             <div
-             
-              className="hover:text-white hover:scale-90 transition duration-200 ease-in w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <Image src={info.img} alt="icons" width={20} height={20} />
-            </div>
+                
+                className="hover:text-white hover:scale-90 transition duration-200 ease-in w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+              >
+                <info.icon className="light:text-black text-white " size={24} />
+              </div>
             </Link>
           ))}
         </div>

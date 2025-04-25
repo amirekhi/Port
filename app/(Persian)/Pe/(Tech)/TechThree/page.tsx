@@ -1,5 +1,5 @@
-import PTech from '@/Components/PTech'
-import PToolTech from '@/Components/PToolTech'
+import PTech from '@/components/PTech'
+import PToolTech from '@/components/PToolTech'
 import React from 'react'
 
 const page = () => {

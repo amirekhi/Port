@@ -1,12 +1,12 @@
-import { FloatingNav } from "@/Components/Ui/FloatingNavbar";
+import { FloatingNav } from "@/components/Ui/FloatingNavbar";
 import { navItems } from "@/data";
-import PHero from "@/Components/PE/PHero";
-import PGridc from "@/Components/PE/PGridcopy";
-import PRecentProjects from "@/Components/PE/PRecentProjects";
-import PClients from "@/Components/PE/PClients";
-import PExperience from "@/Components/PE/PExperience";
-import PApproach from "@/Components/PE/PApproach";
-import PFooter from "@/Components/PE/PFooter";
+import PHero from "@/components/PE/PHero";
+import PGridc from "@/components/PE/PGridcopy";
+import PRecentProjects from "@/components/PE/PRecentProjects";
+import PClients from "@/components/PE/PClients";
+import PExperience from "@/components/PE/PExperience";
+import PApproach from "@/components/PE/PApproach";
+import PFooter from "@/components/PE/PFooter";
 
 
 export default function PEHome() {

@@ -1,8 +1,8 @@
 import React from 'react'
 
 
-import TechWeb from '@/Components/TechWeb'
-import TechPackage from '@/Components/TechPackage'
+import TechWeb from '@/components/TechWeb'
+import TechPackage from '@/components/TechPackage'
 
 
 const page = () => {

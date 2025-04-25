@@ -7,8 +7,8 @@ import {TWeb} from '@/data'
 
 const PTechWeb = () => {
   return (<>
-  <h1 className="font-bold text-4xl md:text-5xl text-center text-white my-20">
-        <span className="text-purple-300"> تکنولوژی تحت وب </span>
+  <h1 className="font-bold text-4xl md:text-5xl text-center light:text-[#3B3B3B] text-white my-20">
+        <span className="text-purple-300 light:text-purple-500"> تکنولوژی تحت وب </span>
        
           همه دوستشون داریم
       </h1>

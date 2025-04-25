@@ -8,9 +8,9 @@ import { PinContainer } from "../Ui/Pin";
 const PRecentProjects = () => {
   return (
     <div className="py-20 w-[70vw] mx-auto">
-      <h1 className="font-bold text-4xl md:text-5xl text-center text-white">
+      <h1 className="font-bold text-4xl md:text-5xl text-center light:text-[#3B3B3B] text-white">
         یه دسته کوچکی از{" "}
-        <span className="text-purple-300">پروژه های اخیر</span>
+        <span className="text-purple-300 light:text-purple-500">پروژه های اخیر</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {Pprojects.map((item) => (

@@ -33,6 +33,62 @@ import {
   
 } from "@/assets";
 import { FaPhone, FaWhatsapp, FaTelegram, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { FaGithub,  FaTelegramPlane } from 'react-icons/fa';
+
+
+
+import { FaHome, FaUser,  FaCogs, FaProjectDiagram } from 'react-icons/fa';
+
+export const routes = [
+  { Icon: FaHome, title: 'Home', Url: '/' },
+  { Icon: FaUser, title: 'About Me', Url: '/About' },
+  { Icon: FaEnvelope, title: 'Contact Me', Url: '/ContactMe' },
+  { Icon: FaCogs, title: 'Tech & Stacks', Url: '/Tech' },
+  { Icon: FaProjectDiagram, title: 'Projects', Url: '/Projects' },
+];
+export const PERoutes = [
+  { Icon: FaHome, title: 'خانه', Url: '/Pe/' },
+  { Icon: FaUser, title: 'در مورد من', Url: '/Pe/About' },
+  { Icon: FaEnvelope, title: 'راه هاب ارتباطی', Url: '/Pe/ContactMe' },
+  { Icon: FaCogs, title: 'زبان ها و تکنولوژی ها', Url: '/Pe/Tech' },
+  { Icon: FaProjectDiagram, title: 'پروژه ها', Url: '/Pe/Projects' },
+];
+
+
+export const commandItemsPlus = [
+  { title: 'Home', href: '/' },
+  { title: 'About Me', href: '/About' },
+  { title: 'Contact Me', href: '/ContactMe' },
+  { title: 'Tech & Stacks ', href: '/Tech' },
+  { title: 'My Projects', href: '/Projects' },
+
+];
+export const PEcommandItemsPlus = [
+  { title: 'خانه', href: '/Pe' },
+  { title: 'درمورد من', href: '/PeAbout' },
+  { title: 'راه های ارتباطی', href: '/PeContactMe' },
+  { title: 'زبان ها و تکنولوژی ها ', href: '/PeTech' },
+  { title: 'پروژه های من', href: '/PeProjects' },
+
+];
+
+
+import { FiLink, FiPhone } from 'react-icons/fi';
+
+export const miscCommandItems = [
+  { title: 'Link Services', Icon: FiLink },
+  { title: 'Contact Support', Icon: FiPhone },
+];
+
+
+import { FiPlus, FiEye } from 'react-icons/fi';
+
+export const teamCommandItems = [
+  { title: 'Check Out my Social Medias', Icon: FiPlus },
+  { title: 'See my Portfolio', Icon: FiEye },
+];
+
+
 
 export  const contactItems = [
   {
@@ -537,70 +593,55 @@ export const PEgridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    title: "Auto gallery ",
+    des: "an auto gallery , you can book or rent the car of your dreams.",
+    img: "/autog.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://pizza-one-rose.vercel.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "Stock Market",
+    des: "live data about all stocks available.",
+    img: "/Stock.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://stockfront-eight.vercel.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    title: "Project Manger",
+    des: "Manage all the projects shair them an chat with one another about the progress .",
+    img: "/management.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "https://the-dojo-1e333.firebaseapp.com/",
   },
 ];
 export const Allprojects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    title: "Auto gallery ",
+    des: "an auto gallery , you can book or rent the car of your dreams.",
+    img: "/autog.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://pizza-one-rose.vercel.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "Stock Market",
+    des: "live data about all stocks available.",
+    img: "/Stock.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://stockfront-eight.vercel.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    title: "Project Manger",
+    des: "Manage all the projects shair them an chat with one another about the progress .",
+    img: "/management.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://the-dojo-1e333.firebaseapp.com/",
   },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
+  
 
 ];
 
@@ -797,20 +838,30 @@ export const PWorkExperience = [
  
 ];
 
-export const socialMedia = [
+
+
+
+import { IconType } from 'react-icons';
+
+type SocialItem = {
+  id: number;
+  icon: IconType;
+  link: string;
+};
+
+export const socialMedia: SocialItem[] = [
   {
     id: 1,
-    img: "/git.svg",
-    link: 'https://github.com/amirekhi'
+    icon: FaGithub,
+    link: 'https://github.com/amirekhi',
   },
   {
     id: 2,
-    img: "/insta.svg",
-    link: 'https://www.instagram.com/amir_ekh_?igsh=YzU3Mnh5MWx3aXRj'
+    icon: FaInstagram,
+    link: 'https://www.instagram.com/amir_ekh_?igsh=YzU3Mnh5MWx3aXRj',
   },
   {
     id: 3,
-    img: "/telegram.svg",
-    link: 'https://t.me/amir44333'
-  },
-];
+    icon: FaTelegramPlane,
+    link: 'https://t.me/amir44333',
+  },]

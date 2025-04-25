@@ -1,5 +1,5 @@
-import Projects from '@/Components/Projects'
-import ProjHero from '@/Components/ProjHero'
+import Projects from '@/components/Projects'
+import ProjHero from '@/components/ProjHero'
 import React from 'react'
 
 const page = () => {

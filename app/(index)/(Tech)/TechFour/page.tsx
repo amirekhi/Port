@@ -1,4 +1,4 @@
-import TechApi from '@/Components/TechApi'
+import TechApi from '@/components/TechApi'
 import React from 'react'
 
 const page = () => {

@@ -1,4 +1,4 @@
-import PTechApi from '@/Components/PTechApi'
+import PTechApi from '@/components/PTechApi'
 import React from 'react'
 
 const page = () => {

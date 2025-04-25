@@ -8,9 +8,9 @@ import { PinContainer } from "./Ui/Pin";
 const Projects = () => {
   return (
     <div className="py-20 w-[70vw] mx-auto">
-      <h1 className="font-bold text-4xl md:text-5xl text-center text-white">
+      <h1 className="font-bold text-4xl md:text-5xl text-center light:text-[#3B3B3B] text-white">
        Explore the  
-        <span className="text-purple-300"> projects </span> you like
+        <span className="text-purple-300 light:text-purple-500"> projects </span> you like
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {Allprojects.map((item) => (

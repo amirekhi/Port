@@ -1,5 +1,5 @@
-import PProjects from '@/Components/PProjects'
-import PProjHero from '@/Components/PProjHero'
+import PProjects from '@/components/PProjects'
+import PProjHero from '@/components/PProjHero'
 import React from 'react'
 
 const page = () => {

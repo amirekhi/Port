@@ -1,10 +1,10 @@
-import Gridc from "@/Components/Gridcopy";
-import Hero from "@/Components/Hero";
-import RecentProjects from "../../Components/RecentProjects";
-import Clients from "@/Components/Clients";
-import Experience from "@/Components/Experience";
-import Approach from "@/Components/Approach";
-import Footer from "@/Components/Footer";
+import Gridc from "@/components/Gridcopy";
+import Hero from "@/components/Hero";
+import RecentProjects from "../../components/RecentProjects";
+import Clients from "@/components/Clients";
+import Experience from "@/components/Experience";
+import Approach from "@/components/Approach";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {

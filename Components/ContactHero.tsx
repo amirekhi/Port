@@ -48,20 +48,20 @@ const ContactHero = ({ title , parag ,  dirClass , linkTxt , linkUrl} : any) => 
      *  0.2 to 0.03
      */}
    <GridBackgroundDemo/>
-   <p className={` ${dirClass} uppercase tracking-widest text-xs text-center text-blue-100 w-full relative`}>
+   <p className={` ${dirClass} uppercase tracking-widest text-xs text-center light:text-[#3B3B3B] text-blue-100 w-full relative`}>
            {title}
           </p>
-          <p className={` ${dirClass} text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white relative `}>
+          <p className={` ${dirClass} text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl light:text-[#3B3B3B] text-white relative `}>
             {parag}
           </p>
-   <div className=" grid grid-cols-12 gap-12 max-md:gap-0 max-md:h-auto h-96  mt-[150px] text-white relative">
+   <div className=" grid grid-cols-12 gap-12 max-md:gap-0 max-md:h-auto h-96  mt-[150px] light:text-[#3B3B3B] text-white relative">
           <div className="col-span-5  max-md:col-span-12 max-md:h-96 h-full">
            <ul className='h-full flex justify-around items-start flex-col w-full '>
                       {contactItems.map((item, index) => (
                         <Link href={item.href} target="_blank" rel="noopener noreferrer" key={index} className='block w-full'>
                         <li  className="flex justify-between w-full items-center hover:bg-gradient-to-r from-purple-400 to-purple-600 transition duration-200   hover:shadow-2xl shadow-purple-200 p-4 rounded-2xl ">
                         <span>{item.label} : {item.value}</span>
-                        <item.icon size={34} color="white" />
+                        <item.icon size={34}   className='light:text-[#3B3B3B] text-white'/>
                         </li>
                         </Link>
                       ))}

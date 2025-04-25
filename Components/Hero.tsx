@@ -6,10 +6,13 @@ import { TextGenerateEffect } from "./Ui/TextGenerateEffect";
 import { GridBackgroundDemo } from "./Ui/GridBackgroundDemo";
 import { FaLanguage } from 'react-icons/fa'
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 w-[80vw] mx-auto relative ">
+    <div className="pb-20 pt-36 w-[80vw] mx-auto relative light:text-[#3B3B3B]  ">
+
+ 
       
       <div className="absolute max-md:hidden z-50 top-0 right-0" >
        < Link href={'/Pe'} >
@@ -47,7 +50,7 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          <p className="uppercase tracking-widest text-xs text-center text-blue-100 light:text-[#3B3B3B]  max-w-80">
             Dynamic Web Magic with Next.js
           </p>
 
@@ -63,7 +66,7 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white ">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl  light:text-[#3B3B3B] text-white ">
             Hi! I&apos;m Amir, a Software engineer based in Tehran.
           </p>
 
@@ -85,6 +88,9 @@ const Hero = () => {
                   buttonClasses="md:w-32"
                 />
           </Link>
+          </div>
+          <div className="mt-4 md:hidden" >
+            <ThemeToggle/>
           </div>
         </div>
       </div>

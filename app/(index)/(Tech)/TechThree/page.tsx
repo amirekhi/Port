@@ -1,6 +1,6 @@
-import Tech from '@/Components/Tech'
+import Tech from '@/components/Tech'
 
-import ToolTech from '@/Components/ToolTech'
+import ToolTech from '@/components/ToolTech'
 import React from 'react'
 
 const page = () => {

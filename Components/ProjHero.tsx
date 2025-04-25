@@ -47,7 +47,7 @@ const ProjHero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          <p className="uppercase tracking-widest text-xs text-center light:text-[#3B3B3B] text-blue-100 max-w-80">
             Projects By Me 
           </p>
 
@@ -63,7 +63,7 @@ const ProjHero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white ">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl light:text-[#3B3B3B] text-white ">
             i have tried to showcase some of the work i do by projects that i have worked on.
           </p>
 
@@ -77,9 +77,9 @@ const ProjHero = () => {
           </Link>
           </div>
           <div className="mt-4 md:hidden" >
-          <Link href="/">
+          <Link href="/Pe/Projects">
               <MagicButton
-                  title="English"
+                  title="فارسی"
                   icon={<FaLanguage size={35} />}
                   position="right"
                   buttonClasses="md:w-32"

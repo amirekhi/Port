@@ -1,5 +1,5 @@
-import PLanguages from '@/Components/PLanguages'
-import PLibTech from '@/Components/PLibTech'
+import PLanguages from '@/components/PLanguages'
+import PLibTech from '@/components/PLibTech'
 
 import React from 'react'
 

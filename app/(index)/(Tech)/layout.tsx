@@ -1,5 +1,5 @@
-import Pagin from "@/Components/Pagin";
-import TechHero from "@/Components/TechHero";
+import Pagin from "@/components/Pagin";
+import TechHero from "@/components/TechHero";
 
 export default function RootLayout({
     children,

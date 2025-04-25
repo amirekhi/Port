@@ -8,9 +8,9 @@ import { PinContainer } from "./Ui/Pin";
 const PProjects = () => {
   return (
     <div className="py-20 w-[70vw] mx-auto">
-      <h1 className="font-bold text-4xl md:text-5xl text-center text-white">
+      <h1 className="font-bold text-4xl md:text-5xl text-center light:text-[#3B3B3B] text-white">
         
-        <span className="text-purple-300"> پروژه ها </span> 
+        <span className="text-purple-300 light:text-purple-500"> پروژه ها </span> 
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {AllPprojects.map((item) => (

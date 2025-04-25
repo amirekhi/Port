@@ -1,4 +1,4 @@
-import ContactHero from '@/Components/ContactHero'
+import ContactHero from '@/components/ContactHero'
 import React from 'react'
 
 const page = () => {

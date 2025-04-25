@@ -7,8 +7,8 @@ import {TWeb} from '@/data'
 
 const TechWeb = () => {
   return (<>
-  <h1 className="font-bold text-4xl md:text-5xl text-center text-white my-20">
-        <span className="text-purple-300"> Web Technologies </span>
+  <h1 className="font-bold text-4xl md:text-5xl text-center light:text-[#3B3B3B] text-white my-20">
+        <span className="text-purple-300 light:text-purple-500"> Web Technologies </span>
        
           we all love
       </h1>

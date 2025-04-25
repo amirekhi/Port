@@ -47,7 +47,7 @@ const PTechHero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          <p className="uppercase tracking-widest text-sm font-semibold text-center text-blue-100 max-w-80 light:text-[#3B3B3B]">
           تکنولوژی‌ ها و استک‌ هایی که از آنها استفاده می‌ کنم و با آنها آشنایی دارم
           </p>
 
@@ -63,7 +63,7 @@ const PTechHero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white ">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl light:text-[#3B3B3B] text-white ">
            در این صفحه من تمام تکنولوژیها و استک‌ هایی که با آنها آشنایی دارم را بر اساس زبان‌های برنامه‌ نویسی، فریم‌ ورکها و سایر دسته‌ بندیها مرتب کرده‌ ام
           </p>
 
