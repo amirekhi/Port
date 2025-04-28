@@ -37,7 +37,7 @@ import { FaGithub,  FaTelegramPlane } from 'react-icons/fa';
 
 
 
-import { FaHome, FaUser,  FaCogs, FaProjectDiagram } from 'react-icons/fa';
+import { FaHome, FaUser,  FaCogs, FaProjectDiagram ,FaPlus } from 'react-icons/fa';
 
 export const routes = [
   { Icon: FaHome, title: 'Home', Url: '/' },
@@ -45,6 +45,12 @@ export const routes = [
   { Icon: FaEnvelope, title: 'Contact Me', Url: '/ContactMe' },
   { Icon: FaCogs, title: 'Tech & Stacks', Url: '/Tech' },
   { Icon: FaProjectDiagram, title: 'Projects', Url: '/Projects' },
+];
+export const Dashroutes = [
+  { Icon: FaHome, title: 'Home', Url: '/' },
+  { Icon: FaPlus, title: 'Add Project', Url: '/AddProject' },
+  { Icon: FaProjectDiagram, title: 'Projects', Url: '/Dashboard' },
+
 ];
 export const PERoutes = [
   { Icon: FaHome, title: 'خانه', Url: '/Pe/' },
@@ -266,29 +272,272 @@ export const technologies = [
   },
 ];
 
-export const LanguagesTech = [
-  
-  
- 
+export const Techs = [
   {
-    name: "TypeScript",
-    icon: typescript,
+    describtion: "Im familiar with these",  
+    span: "Languages",
+    Tech :[  
+     
+      {
+        name: "TypeScript",
+        icon: typescript,
+      },
+      {
+        name: "C#",
+        icon: Csharp,
+      },
+      {
+        name: "Python",
+        icon: python,
+      },
+     
+      {
+        name: "C++",
+        icon: Cplus,
+      },
+      
+    ]} ,
+  {
+    describtion: "Im familiar with these",  
+    span: "Databases",
+    Tech :[  
+     
+      {
+        name: "sqlserver",
+        icon: sqlserver,
+      },
+       {
+        name: "postgress",
+        icon: postgress,
+      },
+    
+    
+    
+      {
+        name: "MongoDB",
+        icon: mongodb,
+      },
+      
+    ]} ,
+  {
+    describtion: "Im familiar with these",  
+    span: "Libraries",
+    Tech :[  
+     
+     
+    {
+      name: "Node JS",
+      icon: nodejs,
+    }, 
+    {
+      name: ".Net",
+      icon: dotnet,
+    },
+    
+    {
+      name: "Nextjs",
+      icon: nextjs,
+    },
+    {
+      name: "Django",
+      icon: django,
+    },
+      
+    ]} ,
+  {
+    describtion: "Im familiar with these",  
+    span: "Tools",
+    Tech :[  
+     
+      {
+        name: "Git",
+        icon: git,
+      }, 
+        {
+        name: "postman",
+        icon: postman,
+      }, 
+        {
+        name: "github",
+        icon: github,
+      }, 
+      
+    ]} ,
+  {
+    describtion: "Im familiar with these",  
+    span: "ٌWeb Tools",
+    Tech :[  
+     
+      {
+        name: "Html",
+        icon: html,
+      }, 
+        {
+        name: "css",
+        icon: css,
+      }, 
+        {
+        name: "js",
+        icon: javascript,
+      }, 
+      {
+        name: "React",
+        icon: reactjs,
+      },
+    
+      
+    ]} ,
+  {
+    describtion: "Im familiar with these",  
+    span: "Packages",
+    Tech :[  
+     
+      {
+        name: "nuget",
+        icon: nuget,
+      }, 
+        {
+        name: "docker",
+        icon: docker,
+      }, 
+      
+        {
+        name: "nodejs",
+        icon: nodejs,
+      }, 
+        {
+        name: "vite",
+        icon: vite,
+      }, 
+      
+    ]} ,
+  {
+    describtion: "Im familiar with these",  
+    span: "Web Apis",
+    Tech :[  
+     
+      {
+        name: "grpc",
+        icon: grpc,
+      }, 
+        {
+        name: "graph",
+        icon: graph,
+      }, 
+      
+        {
+        name: "openapi",
+        icon: openapi,
+      }, 
+        {
+        name: "swag",
+        icon: swag,
+      }, 
+      {
+        name: "REST",
+        icon: REST,
+      }, 
+      
+    ]} ,
+
+]
+export const PTechs = [
+  {
+    describtion: "با این موارد آشنایی دارم",
+    span: "زبان‌ها",
+    Tech: [
+      { name: "TypeScript", icon: typescript },
+      { name: "C#", icon: Csharp },
+      { name: "Python", icon: python },
+      { name: "++C", icon: Cplus },
+    ],
   },
   {
-    name: "C#",
-    icon: Csharp,
+    describtion: "با این موارد آشنایی دارم",
+    span: "دیتابیس‌ها",
+    Tech: [
+      { name: "SQL Server", icon: sqlserver },
+      { name: "PostgreSQL", icon: postgress },
+      { name: "MongoDB", icon: mongodb },
+    ],
   },
   {
-    name: "Python",
-    icon: python,
+    describtion: "با این موارد آشنایی دارم",
+    span: "کتابخانه‌ها",
+    Tech: [
+      { name: "Node JS", icon: nodejs },
+      { name: ".Net", icon: dotnet },
+      { name: "Next.js", icon: nextjs },
+      { name: "Django", icon: django },
+    ],
   },
- 
   {
-    name: "C++",
-    icon: Cplus,
+    describtion: "با این موارد آشنایی دارم",
+    span: "ابزارها",
+    Tech: [
+      { name: "Git", icon: git },
+      { name: "Postman", icon: postman },
+      { name: "GitHub", icon: github },
+    ],
   },
-  
+  {
+    describtion: "با این موارد آشنایی دارم",
+    span: "ابزارهای وب",
+    Tech: [
+      { name: "HTML", icon: html },
+      { name: "CSS", icon: css },
+      { name: "JavaScript", icon: javascript },
+      { name: "React", icon: reactjs },
+    ],
+  },
+  {
+    describtion: "با این موارد آشنایی دارم",
+    span: "پکیج‌ها",
+    Tech: [
+      { name: "NuGet", icon: nuget },
+      { name: "Docker", icon: docker },
+      { name: "Node.js", icon: nodejs },
+      { name: "Vite", icon: vite },
+    ],
+  },
+  {
+    describtion: "با این موارد آشنایی دارم",
+    span: "وب‌اپی‌ها",
+    Tech: [
+      { name: "gRPC", icon: grpc },
+      { name: "GraphQL", icon: graph },
+      { name: "OpenAPI", icon: openapi },
+      { name: "Swagger", icon: swag },
+      { name: "REST", icon: REST },
+    ],
+  },
 ];
+
+export const LanguagesTech = {
+  describtion: "Im familiar with these",  
+  span: "Languages",
+  Tech :[  
+   
+    {
+      name: "TypeScript",
+      icon: typescript,
+    },
+    {
+      name: "C#",
+      icon: Csharp,
+    },
+    {
+      name: "Python",
+      icon: python,
+    },
+   
+    {
+      name: "C++",
+      icon: Cplus,
+    },
+    
+  ]} ;
+
 export const Lib = [
   
     {
@@ -735,16 +984,23 @@ export const testimonials = [
 export const Ptestimonials = [
   {
     quote:
-      "همکاری با آدریان یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق آدریان به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، آدریان شریک ایده‌آلی برای شماست.",
+      "همکاری با امیر یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق امیر به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، امیر شریک ایده‌آلی برای شماست.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "همکاری با آدریان یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق آدریان به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، آدریان شریک ایده‌آلی برای شماست.",
+      "همکاری با امیر یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق امیر به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، امیر شریک ایده‌آلی برای شماست.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
+  {
+    quote:
+      "همکاری با امیر یک تجربه فوق‌العاده بود. حرفه‌ای‌گری، سرعت عمل و تعهد او به ارائه نتایجی بی‌نظیر در طول پروژه ما کاملاً مشهود بود. اشتیاق امیر به تمام جنبه‌های توسعه واقعاً چشمگیر است. اگر به دنبال ارتقای وب‌سایت و برند خود هستید، امیر شریک ایده‌آلی برای شماست.",
+    name: "Michael Johnson",
+    title: "Director of AlphaStream Technologies",
+  },
+
 
 ];
 

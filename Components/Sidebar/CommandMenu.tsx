@@ -58,7 +58,7 @@ export const CommandMenu = ({ open, setOpen} : any) => {
           value={value}
           onValueChange={setValue}
           placeholder="What do you need?"
-          className="relative border-b border-stone-300 p-3 text-lg w-full placeholder:text-stone-400 focus:outline-none"
+          className="relative border-b border-stone-300 p-3 text-lg w-full placeholder:text-black focus:outline-none"
         />
         <Command.List className="p-3 ">
           <Command.Empty>

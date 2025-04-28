@@ -33,7 +33,7 @@ export const PinContainer = ({
     <Link href={href} >
     <div
       className={cn(
-        "relative group/pin z-50  cursor-pointer ",
+        "relative group/pin z-40  cursor-pointer ",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
@@ -51,7 +51,7 @@ export const PinContainer = ({
             transform: transform,
           }}
           // remove  bg-black
-          className="absolute left-1/2 p-4 top-1/2 light:bg-[#04071d] flex justify-start items-start  rounded-2xl shadow-indigo-600  shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
+          className="absolute left-1/2 p-4 top-1/2 light:bg-[#04071d] flex justify-start items-start  rounded-2xl shadow-indigo-600  dark:border-t-2 dark:border-t-indigo-600 shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
         >
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>

@@ -1,16 +1,31 @@
-import PLanguages from '@/components/PLanguages'
-import PLibTech from '@/components/PLibTech'
+"use client";
 
-import React from 'react'
+import React, { useState } from 'react';
+import Languages from '@/components/Languages';
+import { PTechs } from '@/data';
+import Pagin from '@/components/Pagin';
 
-const page = () => {
+const Page = () => {
+  const [page, setPage] = useState(1);
+  const itemsPerPage = 2;
+
+  const startIndex = (page - 1) * itemsPerPage;
+  const selectedTechs = PTechs.slice(startIndex, startIndex + itemsPerPage);
+
   return (
     <>
-        
-         <PLanguages/>
-         <PLibTech/>
-    </>
-  )
-}
+      {selectedTechs.map((tech, index) => (
+        <Languages key={index} obj={tech} />
+      ))}
 
-export default page
+      <Pagin
+        page={page}
+        setPage={setPage}
+        totalItems={PTechs.length}
+        itemsPerPage={itemsPerPage}
+      />
+    </>
+  );
+};
+
+export default Page;

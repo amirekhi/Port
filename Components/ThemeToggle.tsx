@@ -19,7 +19,9 @@ export default function ThemeToggle() {
   return (
     
 
-    <button  onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+    <button  onClick={() => {setTheme(theme === 'dark' ? 'light' : 'dark') 
+      console.log('gg')
+    }}
     className={`  relative inline-flex h-12 w-full md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none group`}
    
   >

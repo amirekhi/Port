@@ -9,7 +9,7 @@ import ThemeToggle from "../ThemeToggle";
 
 const PHero = () => {
   return (
-    <div className="pb-20 pt-36 w-[80vw] mx-auto relative light:text-[#3B3B3B] ">
+    <div className="pb-20 pt-36 w-[80vw] mx-auto relative  ">
        <div className="absolute max-md:hidden z-50 top-0 right-0" >
        < Link href={'/'} >
             <MagicButton
@@ -58,7 +58,7 @@ const PHero = () => {
             words="من اینجا هستم تا ایده ی شمارو به واقعیت تبدیل کنم"
             duration={2}
              filter={false}
-            className="text-center text-[40px] md:text-5xl lg:text-7xl"
+            className="text-center text-[40px] md:text-5xl lg:text-7xl mb-4"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-xl lg:text-3xl max-md:mt-5 light:text-[#3B3B3B] text-white ">

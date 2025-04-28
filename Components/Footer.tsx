@@ -38,7 +38,7 @@ const Footer = () => {
           Copyright © 2024 CodeCore 4433
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 max-md:mt-6 gap-6">
           {socialMedia.map((info) => (
                <Link href={info.link} key={info.id}>
                <div

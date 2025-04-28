@@ -8,7 +8,7 @@ import { InfiniteMovingCards } from "../Ui/InfiniteCards";
 const PClients = () => {
   return (
     <section id="testimonials" className="py-20">
-      <h1 className="font-bold text-4xl md:text-5xl text-center light:text-[#3B3B3B] text-white">
+      <h1 className="font-bold text-4xl md:text-5xl text-center light:text-[#3B3B3B] text-white mx-auto w-[80%]">
         کلماتی زیبا از 
         <span className="text-purple-300 light:text-purple-500"> رضایت مشتری</span>
       </h1>

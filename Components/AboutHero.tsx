@@ -4,7 +4,7 @@ import MagicButton from "./MagicButton";
 import { Spotlight } from "./Ui/Spotlight";
 import { TextGenerateEffect } from "./Ui/TextGenerateEffect";
 import { GridBackgroundDemo } from "./Ui/GridBackgroundDemo";
-import { FaLanguage } from 'react-icons/fa'
+import { FaDownload, FaLanguage } from 'react-icons/fa'
 import Link from "next/link";
 
 type props = {
@@ -78,15 +78,25 @@ const AboutHero = ({LanguageLink , Language , Header , TextGenerator ,  Paragrap
 
         
           <div className="mt-4 md:hidden" >
-          <Link href="/">
+          <Link href={LanguageLink} >
               <MagicButton
-                  title="English"
+                  title={Language}
                   icon={<FaLanguage size={35} />}
                   position="right"
                   buttonClasses="md:w-32"
                 />
           </Link>
           </div>
+             <div className="  mt-4 mx-auto md:hidden" >
+                    <Link href={'/AmirPortfolio.pdf'} download  >
+                                <MagicButton
+                                title={Language !== "English" ? ("Download My Prtfolio") : ("دانلود رزومه ی من")}
+                                position="right"
+                                buttonClasses="md:w-32" 
+                                icon={<FaDownload/>}  
+                                    />
+                            </Link>
+              </div>
         </div>
       </div>
     </div>

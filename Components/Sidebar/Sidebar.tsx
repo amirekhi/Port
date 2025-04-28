@@ -8,10 +8,16 @@ import { Plan } from "./Plan";
 import { HiMenu } from "react-icons/hi";
 import CloseButton from "../Closebutton";
 import Closebutton from "../Closebutton";
-
+import ThemeToggle from "../ThemeToggle";
+import MagicButton from "../MagicButton";
+import Link from "next/link";
+import { FaDownload } from 'react-icons/fa'; // "Fa" = FontAwesome icons
+import { usePathname } from "next/navigation";
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
+  const PERoute = pathname.toLowerCase().includes("pe");
   // Ref to the sidebar
   const sidebarRef = useRef<HTMLDivElement | null>(null);
 
@@ -66,7 +72,7 @@ export const Sidebar = () => {
     <>
       {/* Toggle Button */}
       <div
-        className={` z-50  absolute top-[20px] left-[30px]   md:hidden `}
+        className={` z-50 fixed top-[20px] left-[30px]   md:hidden `}
       >
         <Closebutton onClick={toggleState} isOpen={isOpen}/>
       </div>
@@ -76,7 +82,7 @@ export const Sidebar = () => {
           ref={sidebarRef}
           className={`${
             isOpen ? "-translate-x-0 " : "-translate-x-full"
-          } transition duration-300 bg-[#37228B] light:bg-[#5f0297] absolute  h-full max-md:fixed top-0 left-0 p-6 z-50 pt-[60px] md:hidden`}
+          } transition duration-300 bg-[#37228B] light:bg-[#5f0297] absolute  h-full max-md:fixed top-0 left-0 p-6 z-50 pt-[60px] md:hidden `}
         >
           {/* Animated Close Button in top right corner */}
           <div className="absolute top-4 right-4">
@@ -90,6 +96,19 @@ export const Sidebar = () => {
             <RouteSelect />
           </div>
           <Plan />
+             <div className="absolute  z-50 bottom-[90px] left-[20px] "  >
+                       <ThemeToggle/>
+              </div>
+             <div className="absolute  z-50 bottom-[150px] left-[20px] "  >
+                  <Link href={'/AmirPortfolio.pdf'} download  >
+                      <MagicButton
+                      title={PERoute ? ('رزومه ی من') : ('My Portfolio')}
+                      position="right"
+                      buttonClasses="md:w-32" 
+                      icon={<FaDownload/>}  
+                          />
+                  </Link>
+              </div>
       </div>
 
     </>

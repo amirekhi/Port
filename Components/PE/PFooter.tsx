@@ -37,7 +37,7 @@ const PFooter = () => {
           Copyright © 2024 Adrian Hajdin
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 mt-6">
           {socialMedia.map((info) => (
             <Link href={info.link} key={info.id}>
             <div

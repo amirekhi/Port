@@ -10,7 +10,7 @@ export default function RootLayout({
        <>
        <TechHero/>
         {children}
-        <Pagin/>
+       
        </>
          
          

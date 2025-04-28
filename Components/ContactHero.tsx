@@ -3,7 +3,7 @@ import React from 'react'
 import MagicButton from './MagicButton'
 import { Spotlight } from './Ui/Spotlight'
 import { GridBackgroundDemo } from './Ui/GridBackgroundDemo'
-import { FaLanguage, FaWhatsapp ,FaInstagram , FaPhone, FaTelegram, FaEnvelope } from 'react-icons/fa6'
+import { FaLanguage, FaWhatsapp ,FaInstagram , FaPhone, FaTelegram, FaEnvelope, FaDownload } from 'react-icons/fa6'
 import ContactExperience from './contact/ContactExperience'
 import { contactItems } from '@/data'
 
@@ -54,6 +54,20 @@ const ContactHero = ({ title , parag ,  dirClass , linkTxt , linkUrl} : any) => 
           <p className={` ${dirClass} text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl light:text-[#3B3B3B] text-white relative `}>
             {parag}
           </p>
+
+
+          <div className=" w-30 mt-12 mx-auto md:hidden" >
+                < Link href={linkUrl} >
+                <MagicButton
+                  title={linkTxt}
+                  icon={<FaLanguage size={35} />}
+                  position="right"
+                  buttonClasses="md:w-32"
+                />
+              </Link>
+          </div>
+       
+
    <div className=" grid grid-cols-12 gap-12 max-md:gap-0 max-md:h-auto h-96  mt-[150px] light:text-[#3B3B3B] text-white relative">
           <div className="col-span-5  max-md:col-span-12 max-md:h-96 h-full">
            <ul className='h-full flex justify-around items-start flex-col w-full '>
@@ -73,6 +87,7 @@ const ContactHero = ({ title , parag ,  dirClass , linkTxt , linkUrl} : any) => 
               <ContactExperience />
             </div>
           </div>
+
         </div>
   </div>
   )
