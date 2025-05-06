@@ -1,14 +1,17 @@
-import PProjects from '@/components/PProjects'
-import PProjHero from '@/components/PProjHero'
-import React from 'react'
+import { getProjects } from '@/app/(Dash)/AddProject/actions';
+import PProjHero from '@/components/PProjHero';
+import Projects from '@/components/Projects';
+import ProjHero from '@/components/ProjHero';
 
-const page = () => {
+export const revalidate = 10; // revalidate every 10 seconds!
+
+export default async function Page() {
+  const projects = await getProjects();
+
   return (
     <>
-     <PProjHero/>
-     <PProjects/>
+      <PProjHero />
+      <Projects projects={projects}  lang='fa'/>
     </>
-  )
+  );
 }
-
-export default page

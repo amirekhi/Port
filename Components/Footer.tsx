@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-[70vw]  mx-auto pt-20 pb-10 light:text-[#3B3B3B] text-white" id="contact">
+    <footer className="w-[70vw] max-md:pt-10  mx-auto pt-20 pb-10 light:text-[#3B3B3B] text-white" id="contact">
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <h1 className="font-bold text-4xl md:text-5xl text-center  lg:max-w-[45vw]">
+        <h1 className="font-bold text-2xl md:text-5xl text-center  lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your</span> digital
           presence to the next level?
         </h1>
@@ -35,7 +35,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 CodeCore 4433
+          Copyright © CodeEKH
         </p>
 
         <div className="flex items-center md:gap-3 max-md:mt-6 gap-6">

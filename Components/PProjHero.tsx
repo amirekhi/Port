@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const PProjHero = () => {
   return (
-    <div className="pb-20 pt-36 w-[80vw] mx-auto relative ">
+    <div className="pb-20 pt-36 w-[80vw] mx-auto relative max-md:pb-10  max-md:pt-16 max-md:h-[500px] ">
       
       <div className="absolute max-md:hidden z-50 top-0 right-0" >
        < Link href={'/Projects'} >
@@ -67,7 +67,7 @@ const PProjHero = () => {
             تلاش من به نمایش کشیدن توانایی های بنده با استفاده از پروژه های انجام شده توسط اینجانب میباشد
           </p>
 
-          <div className="max-md:mt-20" >
+          <div className="max-md:mt-4" >
           <Link href="/Pe/Tech">
             <MagicButton
               title="تکنولوژی های  من"

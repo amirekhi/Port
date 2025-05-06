@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const ProjHero = () => {
   return (
-    <div className="pb-20 pt-36 w-[80vw] mx-auto relative ">
+    <div className="pb-20 pt-36 w-[80vw] mx-auto relative   max-md:pt-16 max-md:pb-10 max-md:h-[500px] ">
       
       <div className="absolute max-md:hidden z-50 top-0 right-0" >
        < Link href={'/Pe/Projects'} >
@@ -67,7 +67,7 @@ const ProjHero = () => {
             i have tried to showcase some of the work i do by projects that i have worked on.
           </p>
 
-          <div className="max-md:mt-20" >
+          <div className="max-md:mt-4" >
           <Link href="/Tech">
             <MagicButton
               title="See my stack"

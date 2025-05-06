@@ -7,8 +7,8 @@ import { InfiniteMovingCards } from "./Ui/InfiniteCards";
 
 const Clients = () => {
   return (
-    <section id="testimonials" className="py-20 light:text-[#3B3B3B] text-white">
-      <h1 className="font-bold text-4xl md:text-5xl text-center  mx-auto w-[80%] ">
+    <section id="testimonials" className="py-20 light:text-[#3B3B3B] text-white max-md:py-10">
+      <h1 className="font-bold text-2xl md:text-5xl text-center  mx-auto w-[80%] ">
         Kind words from
         <span className="text-purple-300 light:text-purple-500"> satisfied clients</span>
       </h1>
@@ -16,12 +16,12 @@ const Clients = () => {
       <div className="flex flex-col items-center max-lg:mt-10">
         <div
           // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design
-          className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
+          className="h-[400px] md:h-[500px] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
         >
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
-            speed="slow"
+            speed="normal"
           />
         </div>
 

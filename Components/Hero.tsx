@@ -10,7 +10,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 w-[80vw] mx-auto relative light:text-[#3B3B3B]  ">
+    <div className="pb-20 pt-36 w-[80vw] mx-auto relative light:text-[#3B3B3B] max-md:pt-16  max-md:h-[500px]  ">
 
  
       
@@ -70,7 +70,7 @@ const Hero = () => {
             Hi! I&apos;m Amir, a Software engineer based in Tehran.
           </p>
 
-          <div className="max-md:mt-20" >
+          <div className="max-md:mt-6" >
           <Link href="/Projects">
             <MagicButton
               title="Show my work"

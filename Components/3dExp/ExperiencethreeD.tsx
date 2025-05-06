@@ -100,7 +100,7 @@ const ExperiencethreeD = ({expCards ,classes , dir , title} : any) => {
           sub="💼 My Career Overview"
         />
         <div className="mt-32 relative">
-          <div className="relative z-50 xl:space-y-32 space-y-10">
+          <div className="relative z-30 xl:space-y-32 space-y-10">
             {expCards.map((card : any) => (
               <div key={card.title} className="flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between">
                 <div className="xl:w-2/6">

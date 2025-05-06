@@ -7,8 +7,8 @@ import { CanvasRevealEffect } from "../Ui/CanvasRevealEffect";
 
 const PApproach = () => {
   return (
-    <section className="w-[70vw] mx-auto py-20">
-      <h1 className="font-bold text-4xl md:text-5xl text-center light:text-[#3B3B3B] text-white">
+    <section className="w-[70vw] mx-auto py-20 max-md:py-10">
+      <h1 className="font-bold text-2xl md:text-5xl text-center light:text-[#3B3B3B] text-white">
          <span className="text-purple-300 light:text-purple-500">روش  برخورد کاری </span> من
       </h1>
       {/* remove bg-white dark:bg-black */}

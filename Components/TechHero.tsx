@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const TechHero = () => {
   return (
-    <div className="pb-20 pt-36 w-[80vw] mx-auto relative ">
+    <div className="pb-20 pt-36 w-[80vw] mx-auto relative max-md:pt-10 max-md:pb-10 max-md:h-[400px] ">
       
       <div className="absolute max-md:hidden z-50 top-0 right-0" >
        < Link href={'/Pe/Tech'} >

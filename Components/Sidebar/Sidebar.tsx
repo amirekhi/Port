@@ -93,7 +93,7 @@ export const Sidebar = () => {
           <div className="overflow-y-auto sticky top-4 h-[calc(100vh-32px-48px)]">
             
             <Search />
-            <RouteSelect />
+            <RouteSelect  setIsOpen={setIsOpen}  />
           </div>
           <Plan />
              <div className="absolute  z-50 bottom-[90px] left-[20px] "  >

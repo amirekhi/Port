@@ -7,7 +7,7 @@ import {SectionWrapper} from '../hoc'
 
 const Languages = ({obj} : any) => {
   return (<>
-  <h1 className="font-bold text-4xl md:text-5xl text-center light:text-[#3B3B3B] text-white my-20">
+  <h1 className="font-bold text-2xl md:text-5xl text-center light:text-[#3B3B3B] text-white my-20 max-md:my-10">
         {obj.describtion}
         <span className="text-purple-300 light:text-purple-500">  {obj.span}</span>
       </h1>

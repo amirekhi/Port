@@ -3,8 +3,8 @@ import { PBentoGridc, PBentoGridItemc } from "./PBentoGridcopy";
 
 const PGridc = () => {
   return (
-    <section id="about" className="w-[70vw] mx-auto">
-      <PBentoGridc className="w-full py-30">
+    <section id="about" className="w-[70%] mx-auto max-md:w-[80%]">
+      <PBentoGridc className="w-full py-30 max-md:py-16">
         {PEgridItems.map((item, i) => (
           <PBentoGridItemc
             id={item.id}

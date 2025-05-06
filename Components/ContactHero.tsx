@@ -13,7 +13,7 @@ import { contactItems } from '@/data'
 
 const ContactHero = ({ title , parag ,  dirClass , linkTxt , linkUrl} : any) => {
   return (
-    <div className="pb-20 pt-36 w-[80vw] mx-auto relative h-[120vh] max-md:h-auto ">
+    <div className="pb-20 pt-36 max-md:pb-10  w-[80vw] mx-auto relative h-[120vh] max-md:h-auto  ">
       
     <div className="absolute max-md:hidden z-50 top-0 right-0" >
      < Link href={linkUrl} >
@@ -73,9 +73,9 @@ const ContactHero = ({ title , parag ,  dirClass , linkTxt , linkUrl} : any) => 
            <ul className='h-full flex justify-around items-start flex-col w-full '>
                       {contactItems.map((item, index) => (
                         <Link href={item.href} target="_blank" rel="noopener noreferrer" key={index} className='block w-full'>
-                        <li  className="flex justify-between w-full items-center hover:bg-gradient-to-r from-purple-400 to-purple-600 transition duration-200   hover:shadow-2xl shadow-purple-200 p-4 rounded-2xl ">
-                        <span>{item.label} : {item.value}</span>
-                        <item.icon size={34}   className='light:text-[#3B3B3B] text-white'/>
+                        <li  className="flex justify-between  w-full dark:text-[#1c2645] light:text-white bg-[#CC7A2C] items-center hover:bg-gradient-to-r from-purple-400 to-purple-600 transition duration-200   hover:shadow-2xl shadow-purple-200 p-4 rounded-2xl ">
+                        <span className='font-semibold'>{item.label} : {item.value}</span>
+                        <item.icon size={34}   className='text-[#1c2645] light:text-white'/>
                         </li>
                         </Link>
                       ))}

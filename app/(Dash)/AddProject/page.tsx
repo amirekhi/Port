@@ -13,6 +13,7 @@ export default function AddProjectPage() {
   const [link, setLink] = useState("");
   const [icons, setIcons] = useState<string[]>([]);
 
+  const [selectedIcon, setSelectedIcon] = useState(""); // dropdown selected value
   const [isPending, startTransition] = useTransition();
   const [success, setSuccess] = useState(false);
 
@@ -37,10 +38,7 @@ export default function AddProjectPage() {
         });
 
         setSuccess(true);
-
-        setTimeout(() => {
-          window.location.reload();
-        }, 1000);
+        setTimeout(() => window.location.reload(), 1000);
       } catch (err) {
         console.error(err);
         alert("Failed to create project");
@@ -48,9 +46,28 @@ export default function AddProjectPage() {
     });
   };
 
+  const iconOptions = [
+    { label: "React", value: "/tech/reactjs.png" },
+    { label: "Next.js", value: "/tech/nextjs.png" },
+    { label: "Tailwind", value: "/tech/tailwind.png" },
+    { label: "Node.js", value: "/tech/nodejs.png" },
+    { label: "TypeScript", value: "/tech/typescript.png" },
+    { label: "MongoDB", value: "/tech/mongodb.png" },
+  ];
+
+  const handleAddIcon = () => {
+    if (selectedIcon && !icons.includes(selectedIcon)) {
+      setIcons([...icons, selectedIcon]);
+      setSelectedIcon("");
+    }
+  };
+
+  const handleRemoveIcon = (url: string) => {
+    setIcons(icons.filter((icon) => icon !== url));
+  };
+
   return (
-    <div className="w-full p-10 text-white light:text-[#3B3B3B] pt-[100px]">
-      {/* Big H1 Title */}
+    <div className="w-full p-10 text-white light:text-[#3B3B3B] max-md:pt-[130px]">
       <h1 className="text-4xl font-bold mb-10 text-left dark:text-white light:text-[#3B3B3B]">
         Create a New Project 🚀
       </h1>
@@ -73,7 +90,7 @@ export default function AddProjectPage() {
           placeholder="Project Title (EN)"
           value={titleEn}
           onChange={(e) => setTitleEn(e.target.value)}
-          className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2 transition-all duration-200 focus:border-purple-500 hover:border-purple-400 dark:focus:border-purple-500 dark:hover:border-purple-400"
+          className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2"
           required
         />
 
@@ -83,7 +100,7 @@ export default function AddProjectPage() {
           placeholder="Project Title (FA)"
           value={titleFa}
           onChange={(e) => setTitleFa(e.target.value)}
-          className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2 transition-all duration-200 focus:border-purple-500 hover:border-purple-400 dark:focus:border-purple-500 dark:hover:border-purple-400"
+          className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2"
           required
         />
 
@@ -92,7 +109,7 @@ export default function AddProjectPage() {
           placeholder="Project Description (EN)"
           value={desEn}
           onChange={(e) => setDesEn(e.target.value)}
-          className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2 min-h-[100px] transition-all duration-200 focus:border-purple-500 hover:border-purple-400 dark:focus:border-purple-500 dark:hover:border-purple-400"
+          className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2 min-h-[100px]"
           required
         />
 
@@ -101,7 +118,7 @@ export default function AddProjectPage() {
           placeholder="Project Description (FA)"
           value={desFa}
           onChange={(e) => setDesFa(e.target.value)}
-          className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2 min-h-[100px] transition-all duration-200 focus:border-purple-500 hover:border-purple-400 dark:focus:border-purple-500 dark:hover:border-purple-400"
+          className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2 min-h-[100px]"
           required
         />
 
@@ -111,18 +128,52 @@ export default function AddProjectPage() {
           placeholder="Project Link"
           value={link}
           onChange={(e) => setLink(e.target.value)}
-          className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2 transition-all duration-200 focus:border-purple-500 hover:border-purple-400 dark:focus:border-purple-500 dark:hover:border-purple-400"
+          className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2"
           required
         />
 
-        {/* Icons */}
-        <input
-          type="text"
-          placeholder="Icon URLs (comma separated)"
-          value={icons.join(",")}
-          onChange={(e) => setIcons(e.target.value.split(","))}
-          className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2 transition-all duration-200 focus:border-purple-500 hover:border-purple-400 dark:focus:border-purple-500 dark:hover:border-purple-400"
-        />
+        {/* Icons Dropdown */}
+        <div>
+          <label className="block font-semibold mb-1">Select Icon</label>
+          <div className="flex gap-2 items-center">
+            <select
+              value={selectedIcon}
+              onChange={(e) => setSelectedIcon(e.target.value)}
+              className="bg-transparent border light:border-black/60 dark:border-white/30 rounded-md px-4 py-2 w-full"
+            >
+              <option value="">-- Choose an icon --</option>
+              {iconOptions.map((icon) => (
+                <option key={icon.value} value={icon.value}>
+                  {icon.label}
+                </option>
+              ))}
+            </select>
+            <button
+              type="button"
+              onClick={handleAddIcon}
+              disabled={!selectedIcon}
+              className="bg-purple-500 hover:bg-purple-600 text-white px-3 py-2 rounded-md"
+            >
+              Add
+            </button>
+          </div>
+
+          {/* Preview Selected Icons */}
+          <div className="flex flex-wrap gap-3 mt-3">
+            {icons.map((iconUrl) => (
+              <div key={iconUrl} className="relative group">
+                <img src={iconUrl} alt="icon" className="w-8 h-8" />
+                <button
+                  type="button"
+                  onClick={() => handleRemoveIcon(iconUrl)}
+                  className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full text-xs w-5 h-5 hidden group-hover:flex items-center justify-center"
+                >
+                  ✕
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* Submit Button */}
         <button

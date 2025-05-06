@@ -39,6 +39,9 @@ import { FaGithub,  FaTelegramPlane } from 'react-icons/fa';
 
 import { FaHome, FaUser,  FaCogs, FaProjectDiagram ,FaPlus } from 'react-icons/fa';
 
+
+
+
 export const routes = [
   { Icon: FaHome, title: 'Home', Url: '/' },
   { Icon: FaUser, title: 'About Me', Url: '/About' },
@@ -132,12 +135,14 @@ export  const contactItems = [
 
 
 export const navItems = [
+  { name: "Home", link: "/" },
   { name: "About Me", link: "/About" },
   { name: "Projects", link: "/Projects" },
   { name: "Tech & Stack", link: "/Tech" },
   { name: "Contact", link: "ContactMe" },
 ];
 export const PnavItems = [
+  { name: " خانه", link: "/Pe" },
   { name: " درمورد من", link: "/Pe/About" },
   { name: "پروژه ها", link: "/Pe/Projects" },
   { name: "زبان و تکنولوژی", link: "/Pe/Tech" },
