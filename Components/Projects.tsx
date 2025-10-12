@@ -63,11 +63,11 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
       </h1>
 
       {/* Scroll container */}
-      <div className="relative mt-10 ">
+      <div className="relative mt-10  ">
         <div
           ref={scrollRef}
           className="
-            flex gap-10 md:overflow-x-hidden overflow-x-auto scrollbar-none scroll-smooth snap-x snap-mandatory p-4
+            flex gap-10 p-20 md:overflow-x-hidden overflow-x-auto scrollbar-none scroll-smooth snap-x snap-mandatory 
           "
         >
           {projects.map((item) => (

@@ -719,12 +719,13 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "I'm really into solving LeetCode problems, click and check me out",
+    url: "https://leetcode.com/amir4433/",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "",
+    img: "/images/LeetCode3.webp",
     spareImg: "",
     
   },
@@ -735,25 +736,27 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
-    img: "",
+    img: "/images/techStack.jpg",
     spareImg: "",
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "I`m also active on LinkedIn.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
+    url: "https://www.linkedin.com/in/amir-ekhi-578258389",
+    img: "/images/LinkedIn3.jpg",
     spareImg: "/b4.svg",
     
   },
 
   {
     id: 5,
-    title: "Currently building a .Net Microservice with EDA ",
-    description: "The Inside Scoop",
+    title: "a Database from scratch !! ",
+    description: "check out my Github im currently building my own database layer by layer . click below.",
+    url: "https://github.com/amirekhi/Buffer-Pool-DB",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -789,12 +792,13 @@ export const PEgridItems = [
   },
   {
     id: 2,
-    title: "منعطف در ساعات کاری",
+    title: " اگر شما هم مثل من علاقه به حل کردن LeetCode دارید، کلیک کنید و به من سر بزنید",
+    url: "https://leetcode.com/amir4433/",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "",
+    img: "/images/LeetCode3.webp",
     spareImg: "",
     
   },
@@ -805,17 +809,18 @@ export const PEgridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
-    img: "",
+    img: "/images/techStack.jpg",
     spareImg: "",
   },
   {
     id: 4,
-    title: "مشتاق تکنولوژی های جدید و علاقه مند به ساخت اپلیکیشن",
+    title: "در لینکدین فعال هستم",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
+    url: "https://www.linkedin.com/in/amir-ekhi-578258389",
+    img: "/images/LinkedIn3.jpg",
     spareImg: "/b4.svg",
     
   },
@@ -1103,6 +1108,7 @@ export const PWorkExperience = [
 
 
 import { IconType } from 'react-icons';
+import { url } from "inspector";
 
 type SocialItem = {
   id: number;

@@ -5,12 +5,13 @@ const Gridc = () => {
   return (
     <section id="about" className="w-[70%] mx-auto max-md:w-[80%]">
       <BentoGridc className="w-full py-30 max-md:py-16">
-        {gridItems.map((item, i) => (
+        {gridItems.map((item) => (
           <BentoGridItemc
             id={item.id}
-            key={i}
+            key={item.id}
             title={item.title}
             description={item.description}
+            url={item.url}
             // remove icon prop
             // remove original classname condition
             className={item.className}
