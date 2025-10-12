@@ -22,9 +22,9 @@ export default async function Home() {
       <Gridc />
       {/* Pass the sliced projects to the Projects component */}
       <Projects projects={latestProjects} lang={"en"} />
-      <Clients />
+      {/* <Clients /> */}
       <Experience />
-      <TabsSection/> 
+      {/* <TabsSection/>  */}
       <Footer />
     </>
   );

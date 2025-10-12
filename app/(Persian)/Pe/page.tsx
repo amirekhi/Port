@@ -24,9 +24,9 @@ export default async function PEHome() {
            <PGridc/>
            {/* Pass the sliced projects to the Projects component */}
            <Projects projects={latestProjects} lang={"fa"} />
-           <PClients/>
+           {/* <PClients/> */}
            <PExperience/>
-           <TabsSection/>        
+           {/* <TabsSection/>         */}
            <PFooter/>             
       </> 
   );
