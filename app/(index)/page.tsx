@@ -6,6 +6,12 @@ import Footer from "@/components/Footer";
 import Projects from "@/components/Projects"; // Import the Projects component
 import { getProjects } from "../(Dash)/AddProject/actions";
 import TabsSection from "@/components/TabsSection";
+import { GetInTouch } from "@/components/GetInTouch";
+import { contacts } from "@/data";
+
+
+
+
 
 // Revalidate the Home page every 8 hours (28,800 seconds)
 export const revalidate = 3600;
@@ -19,6 +25,7 @@ export default async function Home() {
   return (
     <>
       <Hero />
+      <GetInTouch contacts={contacts} />
       <Gridc />
       {/* Pass the sliced projects to the Projects component */}
       <Projects projects={latestProjects} lang={"en"} />
