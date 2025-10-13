@@ -11,6 +11,7 @@ const PGridc = () => {
             key={i}
             title={item.title}
             description={item.description}
+            url={item.url}
             // remove icon prop
             // remove original classname condition
             className={item.className}

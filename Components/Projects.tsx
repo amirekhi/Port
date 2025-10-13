@@ -45,7 +45,7 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
   };
 
   return (
-    <div className="relative py-20 w-[90vw] mx-auto max-md:w-[95vw] max-md:py-6" dir={isFarsi ? "rtl" : "ltr"}>
+    <div className=" relative py-20 w-[90vw] mx-auto max-md:w-[95vw] max-md:py-6" dir={isFarsi ? "rtl" : "ltr"}>
       <h1
         className={`font-bold text-2xl md:text-5xl text-center light:text-[#3B3B3B] text-white`}
       >
@@ -67,7 +67,7 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
         <div
           ref={scrollRef}
           className="
-            flex gap-10 p-20 md:overflow-x-hidden overflow-x-auto scrollbar-none scroll-smooth snap-x snap-mandatory 
+            flex gap-10 p-20 md:overflow-x-hidden max-md:[&::-webkit-scrollbar]:hidden overflow-x-auto scrollbar-none scroll-smooth snap-x snap-mandatory 
           "
         >
           {projects.map((item) => (
