@@ -24,7 +24,7 @@ export const BentoGridc = ({
   return (
     <div
       className={cn(
-        "w-[70vw] mx-auto gap-4 lg:gap-8",
+        "w-[70vw] mx-auto max-md:w-[100vw] gap-4 lg:gap-8 max-md:pl-8",
         "max-md:flex max-md:space-x-4 max-md:overflow-x-auto max-md:scroll-smooth max-md:snap-x max-md:snap-mandatory max-sm:[&::-webkit-scrollbar]:hidden",
         "md:grid md:grid-cols-6 lg:grid-cols-5 md:grid-row-7",
         className
@@ -81,7 +81,7 @@ export const BentoGridItemc = ({
       <div
         className={cn(
           "row-span-1 text-white relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
-          "max-md:flex-shrink-0 max-md:w-[80%] max-md:snap-center",
+          "max-md:flex-shrink-0 max-md:w-[80%] max-md:snap-center ",
           className
         )}
         style={{

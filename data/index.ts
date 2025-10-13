@@ -706,12 +706,12 @@ export const PPaginationItems = [
 ]
 
 export const contacts = [
-  { name: "GitHub", url: "https://github.com/username", img: "/tech/github.png" },
-  { name: "LinkedIn", url: "https://linkedin.com/in/username", img: "/GetInTouch/linkedin.png" },
-  { name: "New Project", url: "https://t.me/username", img: "/GetInTouch/newProject.jpg" },
-  { name: "GitHub", url: "https://github.com/username", img: "/GetInTouch/blog.jpg" },
-  { name: "LinkedIn", url: "https://linkedin.com/in/username", img: "/images/LeetCode.jpg" },
-  { name: "Telegram", url: "https://t.me/username", img: "/GetInTouch/Telegram2.png" },
+  { name: "GitHub", url: "https://github.com/amirekhi", img: "/tech/github.png" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/amir-ekhi-578258389", img: "/GetInTouch/linkedin.png" },
+  { name: "New Project", url: "https://github.com/amirekhi/Buffer-Pool-DB", img: "/GetInTouch/newProject.jpg" },
+  { name: "GitHub", url: "https://github.com/amirekhi", img: "/GetInTouch/blog.jpg" },
+  { name: "LinkedIn", url: "https://leetcode.com/amir4433/", img: "/images/LeetCode.jpg" },
+  { name: "Telegram", url: "https://t.me/amir44333", img: "/GetInTouch/Telegram2.png" },
   { name: "New Project", url: "https://t.me/username", img: "/GetInTouch/youtube.jpg" },
   // add more if you want
 ];

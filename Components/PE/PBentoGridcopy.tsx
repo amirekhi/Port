@@ -26,7 +26,7 @@ export const PBentoGridc = ({
       className={cn(
         // On small screens: make it a horizontal scroll container
         // On md and up: revert to a grid layout
-        "w-[70vw] mx-auto gap-4 lg:gap-8",
+        "w-[70vw] max-md:w-full pl-8 mx-auto gap-4 lg:gap-8",
         "max-md:flex max-md:space-x-4 max-md:overflow-x-auto max-md:scroll-smooth max-md:snap-x max-md:snap-mandatory",
         "md:grid md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 max-sm:[&::-webkit-scrollbar]:hidden",
         className

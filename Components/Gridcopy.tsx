@@ -3,8 +3,8 @@ import { BentoGridc, BentoGridItemc } from "./Ui/BentoGridcopy";
 
 const Gridc = () => {
   return (
-    <section id="about" className="w-[70%] mx-auto max-md:w-[80%]">
-      <BentoGridc className="w-full py-30 max-md:py-16">
+    <section id="about" className="w-[70%] mx-auto max-md:w-full ">
+      <BentoGridc className="w-full py-30 max-md:py-12">
         {gridItems.map((item) => (
           <BentoGridItemc
             id={item.id}

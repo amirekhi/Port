@@ -6,6 +6,8 @@ import PFooter from "@/components/PE/PFooter";
 import Projects from "@/components/Projects";
 import { getProjects } from "@/app/(Dash)/AddProject/actions";
 import TabsSection from "@/components/TabsSection";
+import { GetInTouch } from "@/components/GetInTouch";
+import { contacts } from "@/data";
 
 
 export const revalidate = 3600;
@@ -21,6 +23,7 @@ export default async function PEHome() {
   return (
       <>
            <PHero />
+           <GetInTouch contacts={contacts} /> 
            <PGridc/>
            {/* Pass the sliced projects to the Projects component */}
            <Projects projects={latestProjects} lang={"fa"} />
