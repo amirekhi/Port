@@ -10,7 +10,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 w-[80vw] mx-auto relative light:text-[#3B3B3B] max-md:pt-16  max-md:h-[500px]  ">
+    <div className="pb-8 pt-36 w-[80vw] mx-auto relative light:text-[#3B3B3B] max-md:pt-16  max-md:h-[400px]  ">
 
  
       
@@ -79,19 +79,19 @@ const Hero = () => {
             />
           </Link>
           </div>
-          <div className="mt-4 md:hidden" >
-          <Link href="/Pe">
-              <MagicButton
-                  title="فارسی"
-                  icon={<FaLanguage size={35} />}
-                  position="right"
-                  buttonClasses="md:w-32"
-                />
-          </Link>
-          </div>
-          <div className="mt-4 md:hidden" >
+          {/* <div className="mt-4 md:hidden" >
+              <Link href="/Pe">
+                  <MagicButton
+                      title="فارسی"
+                      icon={<FaLanguage size={35} />}
+                      position="right"
+                      buttonClasses="md:w-32"
+                    />
+              </Link>
+          </div> */}
+          {/* <div className="mt-4 md:hidden" >
             <ThemeToggle/>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ import Closebutton from "../Closebutton";
 import ThemeToggle from "../ThemeToggle";
 import MagicButton from "../MagicButton";
 import Link from "next/link";
-import { FaDownload } from 'react-icons/fa'; // "Fa" = FontAwesome icons
+import { FaDownload, FaLanguage } from 'react-icons/fa'; // "Fa" = FontAwesome icons
 import { usePathname } from "next/navigation";
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -99,7 +99,17 @@ export const Sidebar = () => {
              <div className="absolute  z-50 bottom-[90px] left-[20px] "  >
                        <ThemeToggle/>
               </div>
-             <div className="absolute  z-50 bottom-[150px] left-[20px] "  >
+              <div className="mt-4 md:hidden absolute  z-50 bottom-[150px] left-[20px]" >
+              <Link href="/Pe">
+                  <MagicButton
+                      title="فارسی"
+                      icon={<FaLanguage size={35} />}
+                      position="right"
+                      buttonClasses="md:w-32"
+                    />
+              </Link>
+          </div>
+             <div className="absolute  z-50 bottom-[210px] left-[20px] "  >
                   <Link href={'/AmirPortfolio.pdf'} download  >
                       <MagicButton
                       title={PERoute ? ('رزومه ی من') : ('My Portfolio')}
