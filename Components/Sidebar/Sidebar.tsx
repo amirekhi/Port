@@ -13,11 +13,15 @@ import MagicButton from "../MagicButton";
 import Link from "next/link";
 import { FaDownload, FaLanguage } from 'react-icons/fa'; // "Fa" = FontAwesome icons
 import { usePathname } from "next/navigation";
+import  {buildLanguageHref} from "../../utils/pathUtils.js"
+
+
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
-  const PERoute = pathname.toLowerCase().includes("pe");
+ const PERoute = /^\/Pe(\/|$)/i.test(pathname);
+
   // Ref to the sidebar
   const sidebarRef = useRef<HTMLDivElement | null>(null);
 
@@ -99,16 +103,17 @@ export const Sidebar = () => {
              <div className="absolute  z-50 bottom-[90px] left-[20px] "  >
                        <ThemeToggle/>
               </div>
-              <div className="mt-4 md:hidden absolute  z-50 bottom-[150px] left-[20px]" >
-              <Link href="/Pe">
-                  <MagicButton
-                      title="فارسی"
-                      icon={<FaLanguage size={35} />}
-                      position="right"
-                      buttonClasses="md:w-32"
-                    />
+            <div className="mt-4 md:hidden absolute z-50 bottom-[150px] left-[20px]">
+              <Link href={buildLanguageHref(pathname, PERoute)}>
+                <MagicButton
+                  title={PERoute ? 'English' : 'فارسی'}
+                  icon={<FaLanguage size={35} />}
+                  position={PERoute ? 'right' : 'left'}
+                  buttonClasses="md:w-32"
+                />
               </Link>
-          </div>
+            </div>
+
              <div className="absolute  z-50 bottom-[210px] left-[20px] "  >
                   <Link href={'/AmirPortfolio.pdf'} download  >
                       <MagicButton
