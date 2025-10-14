@@ -77,7 +77,7 @@ const AboutHero = ({LanguageLink , Language , Header , TextGenerator ,  Paragrap
           </p>
 
         
-          <div className="mt-4 md:hidden" >
+          {/* <div className="mt-4 md:hidden" >
           <Link href={LanguageLink} >
               <MagicButton
                   title={Language}
@@ -86,11 +86,11 @@ const AboutHero = ({LanguageLink , Language , Header , TextGenerator ,  Paragrap
                   buttonClasses="md:w-32"
                 />
           </Link>
-          </div>
+          </div> */}
              <div className="  mt-4 mx-auto md:hidden" >
                     <Link href={'/AmirPortfolio.pdf'} download  >
                                 <MagicButton
-                                title={Language !== "English" ? ("Download My Prtfolio") : ("دانلود رزومه ی من")}
+                                title={Language !== "English" ? ("Download My resume") : ("دانلود رزومه ی من")}
                                 position="right"
                                 buttonClasses="md:w-32" 
                                 icon={<FaDownload/>}  

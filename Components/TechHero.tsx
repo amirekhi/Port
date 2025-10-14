@@ -68,7 +68,7 @@ const TechHero = () => {
           </p>
 
     
-          <div className="mt-4 md:hidden" >
+          {/* <div className="mt-4 md:hidden" >
           <Link href="/Pe/Tech">
               <MagicButton
                   title="فارسی"
@@ -77,7 +77,7 @@ const TechHero = () => {
                   buttonClasses="md:w-32"
                 />
           </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -56,7 +56,7 @@ const ContactHero = ({ title , parag ,  dirClass , linkTxt , linkUrl} : any) => 
           </p>
 
 
-          <div className=" w-30 mt-12 mx-auto md:hidden" >
+          {/* <div className=" w-30 mt-12 mx-auto md:hidden" >
                 < Link href={linkUrl} >
                 <MagicButton
                   title={linkTxt}
@@ -65,7 +65,7 @@ const ContactHero = ({ title , parag ,  dirClass , linkTxt , linkUrl} : any) => 
                   buttonClasses="md:w-32"
                 />
               </Link>
-          </div>
+          </div> */}
        
 
    <div className=" grid grid-cols-12 gap-12 max-md:gap-0 max-md:h-auto h-96  mt-[150px] light:text-[#3B3B3B] text-white relative">

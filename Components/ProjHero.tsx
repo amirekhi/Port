@@ -76,7 +76,7 @@ const ProjHero = () => {
             />
           </Link>
           </div>
-          <div className="mt-4 md:hidden" >
+          {/* <div className="mt-4 md:hidden" >
           <Link href="/Pe/Projects">
               <MagicButton
                   title="فارسی"
@@ -85,7 +85,7 @@ const ProjHero = () => {
                   buttonClasses="md:w-32"
                 />
           </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
