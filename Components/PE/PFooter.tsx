@@ -17,7 +17,7 @@ const PFooter = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <h1 className="font-bold text-2xl md:text-5xl text-center light:text-[#3B3B3B]   text-white lg:max-w-[45vw]">
+        <h1 className="font-bold text-lg leading-relaxed  md:text-5xl text-center light:text-[#3B3B3B]   text-white lg:max-w-[45vw]">
         اماده ای تا بیزینست رو با دنیای دیجیتال  به یه لول دیگه ارتقا بدی ؟
         </h1>
         <p className="text-white  light:text-[#3B3B3B] md:mt-10 my-5 text-center">

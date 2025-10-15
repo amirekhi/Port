@@ -43,7 +43,7 @@ const Pagin: React.FC<PaginProps> = ({ page, setPage, totalItems, itemsPerPage }
   };
 
   return (
-    <div className="mx-auto w-fit my-20 flex gap-4 justify-center items-center">
+    <div className="mx-auto w-fit my-20 flex gap-4 justify-center items-center " dir="ltr">
       {page !== 1 && (
         <motion.button
           whileHover={{ scale: 1.2 }}

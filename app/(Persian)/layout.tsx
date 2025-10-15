@@ -11,7 +11,7 @@ export default function RootLayout({
     return (
       <>
       <Sidebar/> 
-       <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto w-full  ">
+       <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto w-full font-persian ">
             <div className="absolute max-md:hidden z-40 top-0 left-[200px] "  >
                        <ThemeToggle/>
                        

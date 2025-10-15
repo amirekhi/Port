@@ -45,7 +45,7 @@ const PHero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-md text-center text-blue-100 light:text-[#3B3B3B] max-w-80">
+          <p className="uppercase tracking-widest text-md text-center text-blue-100 light:text-[#3B3B3B] max-w-80 font-persian">
             مهندسیه انواع اپ ها تحت وب و غیره
           </p>
 
@@ -58,10 +58,10 @@ const PHero = () => {
             words="من اینجا هستم تا ایده ی شمارو به واقعیت تبدیل کنم"
             duration={2}
              filter={false}
-            className="text-center text-[40px] md:text-5xl lg:text-7xl mb-4"
+            className="text-center text-[40px] md:text-5xl lg:text-7xl mb-4 font-persian"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-xl lg:text-3xl max-md:mt-5 light:text-[#3B3B3B] text-white ">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-xl lg:text-3xl max-md:mt-5 light:text-[#3B3B3B] text-white  font-persian">
            IT  سلام من امیر هستم  توسعه دهنده اپلیکیشن , مهندس  
           </p>
           <div className="max-md:mt-6" >

@@ -43,7 +43,7 @@ const MagicButton = ({
              `}
       >
         {position === "left" && icon}
-        <div className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text group-hover:text-transparent">
+        <div className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text group-hover:text-transparent font-persian">
         {title}
         </div>
         {position === "right" && icon}

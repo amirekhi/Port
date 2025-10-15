@@ -1,6 +1,25 @@
 @import "tailwindcss";
 @tailwind utilities;
 
+
+/* adding fonts */
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("/fonts/vazir-font-v16.1.0/Vazir.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Optional: direction and font class for Persian text */
+.font-persian {
+  font-family: "Vazirmatn", sans-serif;
+  direction: rtl;
+}
+
+
+
 .no-visible-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;
