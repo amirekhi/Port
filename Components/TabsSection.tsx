@@ -46,7 +46,8 @@ const TabsSection = () => {
         },
       ];
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-[95%]  items-start justify-start mt-10 mb-40 max-md:my-12 max-md:mb-[400px]">
+    <div className="h-[20rem] md:h-[60rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-[95%]  items-start justify-start mt-10 mb-40 max-md:my-12 max-md:mb-[400px] pb-[200px]">
+      <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 max-md:text-center max-md:w-full">a catalog of my work</h2>
     <Tabs tabs={tabs} />
   </div>
   )
