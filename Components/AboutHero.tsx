@@ -72,7 +72,7 @@ const AboutHero = ({LanguageLink , Language , Header , TextGenerator ,  Paragrap
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl light:text-[#3B3B3B] text-white ">
+          <p className="text-center md:tracking-wider mb-4 text-[16px] mt-2 md:text-lg lg:text-2xl light:text-[#3B3B3B] text-white ">
           { Paragraph }
           </p>
 

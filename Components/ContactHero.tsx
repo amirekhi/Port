@@ -51,7 +51,7 @@ const ContactHero = ({ title , parag ,  dirClass , linkTxt , linkUrl} : any) => 
    <p className={` ${dirClass} uppercase tracking-widest text-xs text-center light:text-[#3B3B3B] text-blue-100 w-full relative`}>
            {title}
           </p>
-          <p className={` ${dirClass} text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl light:text-[#3B3B3B] text-white relative `}>
+          <p className={` ${dirClass} text-center md:tracking-wider mb-4 text-[16px] md:text-lg lg:text-2xl light:text-[#3B3B3B] text-white relative `}>
             {parag}
           </p>
 

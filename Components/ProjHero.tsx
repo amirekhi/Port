@@ -63,7 +63,7 @@ const ProjHero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl light:text-[#3B3B3B] text-white ">
+          <p className="text-center md:tracking-wider mb-4 mt-2 text-[16px] md:text-lg lg:text-2xl light:text-[#3B3B3B] text-white ">
             i have tried to showcase some of the work i do by projects that i have worked on.
           </p>
 
