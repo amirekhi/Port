@@ -21,7 +21,7 @@ export const GetInTouch = ({ contacts, className }: GetInTouchProps) => {
   return (
     // Wrapper to isolate scroll from layout parent's overflow-hidden
     <div className={cn("w-full overflow-visible mt-16 flex justify-center items-center ",  className)}>
-      <div className="flex max-md:pl-8 gap-4 overflow-x-auto scroll-smooth px-2 py-4 max-md:scroll-pl-4 max-md:scroll-pr-4 [&::-webkit-scrollbar]:hidden">
+      <div className="flex max-md:px-8 gap-4 overflow-x-auto scroll-smooth px-2 py-4 max-md:scroll-pl-4 max-md:scroll-pr-4 [&::-webkit-scrollbar]:hidden">
         {contacts.map((contact, i) => (
           <Link key={i} href={contact.url} target="_blank" className="flex-shrink-0 snap-center">
             <div
