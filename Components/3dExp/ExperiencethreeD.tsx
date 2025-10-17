@@ -90,9 +90,10 @@ const ExperiencethreeD = ({expCards ,classes , dir , title} : any) => {
   }, []);
 
   return (
-    <section
+    <section     
       id="experience"
       className="flex justify-center items-center py-20  px-5 md:px-10 md:mt-40 mt-20 xl:px-0 light:text-[#3B3B3B] text-white"
+      dir="ltr"
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
@@ -105,7 +106,7 @@ const ExperiencethreeD = ({expCards ,classes , dir , title} : any) => {
               <div key={card.title} className="flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between">
                 <div className="xl:w-2/6">
                   <GlowCard card={card} dir={dir}>
-                    <div>
+                    <div className="round-full">
                       <img src={card.imgPath} alt="exp-img" />
                     </div>
                   </GlowCard>
@@ -118,7 +119,7 @@ const ExperiencethreeD = ({expCards ,classes , dir , title} : any) => {
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       <div className="md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-gray-300 bg-black-100">
-                        <img src={card.logoPath} alt="logo" />
+                        <img src={card.logoPath} alt="logo" className="rounded-full object-cover  mx-auto shadow-lg" />
                       </div>
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
