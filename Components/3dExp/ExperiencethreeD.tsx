@@ -107,7 +107,7 @@ const ExperiencethreeD = ({expCards ,classes , dir , title} : any) => {
                 <div className="xl:w-2/6">
                   <GlowCard card={card} dir={dir}>
                     <div className="round-full">
-                      <img src={card.imgPath} alt="exp-img" />
+                      <img src={card.imgPath} alt="exp-img" className="h-32 w-32 max-md:w-12 max-md:h-12 rounded-full border border-gray-300 "/>
                     </div>
                   </GlowCard>
                 </div>

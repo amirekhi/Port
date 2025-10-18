@@ -86,7 +86,9 @@ export const Sidebar = () => {
           ref={sidebarRef}
           className={`${
             isOpen ? "-translate-x-0 " : "-translate-x-full"
-          } transition duration-300 bg-[#37228B] light:bg-[#5f0297] absolute  h-full max-md:fixed top-0 left-0 p-6 z-50 pt-[60px] md:hidden `}
+          } transition duration-300 bg-[#37228B] light:bg-[#5f0297] absolute  h-full max-md:fixed top-0 left-0 p-6 z-50 pt-[60px] md:hidden ${
+            PERoute ? "font-persian" : ""
+          } `}
         >
           {/* Animated Close Button in top right corner */}
           <div className="absolute top-4 right-4">

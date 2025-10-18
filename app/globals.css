@@ -35,11 +35,7 @@
 @custom-variant dark (&:where(.dark , .dark *));
 @custom-variant light (&:where(.light , .light *));
 
-body {
 
-
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 
 
