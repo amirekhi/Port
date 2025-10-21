@@ -19,8 +19,8 @@ export const revalidate = 3600;
 export default async function Home() {
   const allProjects = await getProjects(); // Fetch all projects
 
-  // Slice the array to get only the last 4 projects
-  const latestProjects = allProjects.slice(0, 4);
+  // Slice the array to get only the last 6 projects
+  const latestProjects = allProjects.slice(0, 6);
 
   return (
     <>
