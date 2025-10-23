@@ -17,8 +17,13 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
   const updateScrollButtons = () => {
     const el = scrollRef.current;
     if (!el) return;
-    setCanScrollLeft(el.scrollLeft > 0);
-    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth);
+    if(isFarsi){
+      setCanScrollLeft( el.clientWidth - el.scrollLeft < el.scrollWidth);
+       setCanScrollRight(el.scrollLeft < 0);
+    }else{
+      setCanScrollLeft(el.scrollLeft > 0);
+      setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth);
+    }
   };
 
   useEffect(() => {
@@ -109,7 +114,7 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
                       </p>
 
                       {!isExpanded && (
-                        <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-[#030618] to-transparent pointer-events-none" />
+                        <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-[#0f0d15] to-transparent pointer-events-none" />
                       )}
                     </div>
 

@@ -9,17 +9,17 @@ export const metadata = {
   description: 'Portfolio of Amir Ekhi, showcasing projects, skills, and contact information.',
   icons: {
     icon: '/netnumeral.jpg',
-    shortcut: '/icons/favicon-32x32.png',
-    apple: '/icons/apple-touch-icon.png',
+    shortcut: '/netnumeral.jpg',
+    apple: '/netnumeral.jpg',
   },
   openGraph: {
     title: 'Amir Ekh – Software Engineer',
     description: 'Explore Amir Ekhi’s projects, skills, and professional journey.',
-    url: 'https://port-eight-swart.vercel.app.com',
+    url: 'https://port-eight-swart.vercel.app',
     siteName: 'Amir Ekh Portfolio',
     images: [
       {
-        url: 'https://port-eight-swart.vercel.app.com/headshot.jpg', // full URL
+        url: 'https://port-eight-swart.vercel.app/headshot.jpg', // full URL
         width: 1200,
         height: 630,
         alt: 'Preview image for Amir Ekh Portfolio',
@@ -32,7 +32,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Amir Ekh – Software Engineer',
     description: 'Explore Amir Ekh’s projects, skills, and professional journey.',
-    images: ['https://port-eight-swart.vercel.app.com/headshot.jpg'],
+    images: ['https://port-eight-swart.vercel.app/headshot.jpg'],
   },
 };
 
