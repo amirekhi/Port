@@ -1,16 +1,15 @@
 import PHero from "@/components/PE/PHero";
 import PGridc from "@/components/PE/PGridcopy";
-import PClients from "@/components/PE/PClients";
 import PExperience from "@/components/PE/PExperience";
 import PFooter from "@/components/PE/PFooter";
 import Projects from "@/components/Projects";
 import { getProjects } from "@/app/(Dash)/AddProject/actions";
-import TabsSection from "@/components/TabsSection";
 import { GetInTouch } from "@/components/GetInTouch";
 import { contacts } from "@/data";
 
 
 export const revalidate = 3600;
+
 
 export default async function PEHome() {
     const allProjects = await getProjects(); // Fetch all projects
@@ -23,7 +22,7 @@ export default async function PEHome() {
   return (
       <>
            <PHero />
-           <GetInTouch contacts={contacts} /> 
+           <GetInTouch contacts={contacts} lang="fa" /> 
            <PGridc/>
            {/* Pass the sliced projects to the Projects component */}
            <Projects projects={latestProjects} lang={"fa"} />

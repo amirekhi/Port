@@ -1,6 +1,5 @@
 import Gridc from "@/components/Gridcopy";
 import Hero from "@/components/Hero";
-import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects"; // Import the Projects component
@@ -8,6 +7,7 @@ import { getProjects } from "../(Dash)/AddProject/actions";
 import TabsSection from "@/components/TabsSection";
 import { GetInTouch } from "@/components/GetInTouch";
 import { contacts } from "@/data";
+
 
 
 
@@ -25,7 +25,7 @@ export default async function Home() {
   return (
     <>
       <Hero />
-      <GetInTouch contacts={contacts} />
+      <GetInTouch contacts={contacts} lang="en"/>
       <Gridc />
       {/* Pass the sliced projects to the Projects component */}
       <Projects projects={latestProjects} lang={"en"} />

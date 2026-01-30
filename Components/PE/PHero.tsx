@@ -5,7 +5,7 @@ import { Spotlight } from "../Ui/Spotlight";
 import { TextGenerateEffect } from "../Ui/TextGenerateEffect";
 import { GridBackgroundDemo } from "../Ui/GridBackgroundDemo";
 import Link from "next/link";
-import ThemeToggle from "../ThemeToggle";
+
 
 const PHero = () => {
   return (

@@ -1,45 +1,45 @@
 import React from "react";
-
 import { workExperience } from "@/data";
 import { Button } from "./Ui/MovingBorders";
 
 const Experience = () => {
   return (
-    <div className="py-20 max-md:py-10 w-[75vw] max-md:w-[80%] mx-auto light:text-[#3B3B3B] text-white">
-      <h1 className="font-bold text-2xl md:text-5xl text-center ">
-        My <span className="text-purple-300 light:text-purple-500">work experience</span>
+    <div className="py-20 max-md:py-10 w-[75vw] max-md:w-[90%] mx-auto light:text-[#3B3B3B] text-white">
+      <h1 className="font-bold text-2xl md:text-5xl text-center">
+        My{" "}
+        <span className="text-purple-300 light:text-purple-500">
+          work experience
+        </span>
       </h1>
 
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      {/* Responsive grid */}
+      <div className="w-full mt-12 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-10">
         {workExperience.map((card) => (
           <Button
             key={card.id}
-            //   random duration will be fun , I think , may be not
             duration={Math.floor(Math.random() * 10000) + 10000}
             borderRadius="1.75rem"
             style={{
-              //   add these two
-              //   you can generate the color from here https://cssgradient.io/
               background: "rgb(4,7,29)",
               backgroundColor:
                 "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-              // add this border radius to make it more rounded so that the moving border is more realistic
-              borderRadius: `calc(1.75rem* 0.96)`,
+              borderRadius: `calc(1.75rem * 0.96)`,
             }}
-            // remove bg-white dark:bg-slate-900
-            className="flex-1  text-white  border-slate-800"
+            className="text-white border-slate-800 w-full"
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-5 py-6 md:p-5 lg:p-10 gap-2">
+            {/* Card content */}
+            <div className="flex flex-col lg:flex-row items-start lg:items-center p-4 md:p-5 lg:p-10 gap-3">
               <img
                 src={card.thumbnail}
-                alt={card.thumbnail}
-                className="lg:w-32 md:w-20 w-16 mb-6"
+                alt={card.title}
+                className="w-12 md:w-20 lg:w-32"
               />
+
               <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
+                <h1 className="text-start text-sm md:text-lg lg:text-2xl font-bold leading-snug">
                   {card.title}
                 </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
+                <p className="text-start text-white-100 mt-2 text-xs md:text-sm lg:text-base font-semibold leading-relaxed">
                   {card.desc}
                 </p>
               </div>

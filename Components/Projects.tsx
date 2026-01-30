@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight, FaLocationArrow } from "react-icons/fa6";
 
@@ -17,10 +18,11 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
   const updateScrollButtons = () => {
     const el = scrollRef.current;
     if (!el) return;
-    if(isFarsi){
-      setCanScrollLeft( el.clientWidth - el.scrollLeft < el.scrollWidth);
-       setCanScrollRight(el.scrollLeft < 0);
-    }else{
+
+    if (isFarsi) {
+      setCanScrollLeft(el.clientWidth - el.scrollLeft < el.scrollWidth);
+      setCanScrollRight(el.scrollLeft < 0);
+    } else {
       setCanScrollLeft(el.scrollLeft > 0);
       setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth);
     }
@@ -49,25 +51,55 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
   };
 
   return (
-    <div className="relative py-20 w-full mx-auto max-md:w-[95vw] max-md:py-6" dir={isFarsi ? "rtl" : "ltr"}>
+    <div
+      className="relative py-20 w-full mx-auto max-md:w-[95vw] max-md:py-10"
+      dir={isFarsi ? "rtl" : "ltr"}
+    >
+      {/* Title */}
       <h1 className="font-bold text-2xl md:text-5xl text-center light:text-[#3B3B3B] text-white">
         {isFarsi ? (
           <>
             پروژه‌های{" "}
-            <span className="text-purple-300 light:text-purple-500">منتخب</span> ما را ببینید
+            <span className="text-purple-300 light:text-purple-500">منتخب</span>{" "}
+            ما را ببینید
           </>
         ) : (
           <>
             Explore the{" "}
-            <span className="text-purple-300 light:text-purple-500">projects</span> you like
+            <span className="text-purple-300 light:text-purple-500">
+              projects
+            </span>{" "}
+            you like
           </>
         )}
       </h1>
 
+      {/* Section description */}
+      <div className="w-[80%] mx-auto md:flex md:justify-center md:items-center md:flex-col md:my-6 mt-12">
+        <h2
+          className={`z-50 text-xl md:text-3xl font-bold mb-3
+          ${isFarsi ? "text-right md:text-center" : "text-left md:text-center"}
+          text-white light:text-[#3B3B3B]`}
+        >
+          {isFarsi ? "چند نمونه از کارهای من" : "A selection of my recent work"}
+        </h2>
+
+        <p
+          className={`text-sm md:text-lg max-md:max-w-[300px]
+          ${isFarsi ? "text-right md:text-center" : "text-left md:text-center"}
+          text-gray-200 light:text-[#3B3B3B]`}
+        >
+          {isFarsi
+            ? "پروژه‌هایی که روی آن‌ها کار کرده‌ام، با تمرکز بر کیفیت، عملکرد و تجربه کاربری."
+            : "Projects I’ve worked on, focused on quality, performance, and great user experience."}
+        </p>
+      </div>
+
+      {/* Carousel */}
       <div className="relative mt-10">
         <div
           ref={scrollRef}
-          className="flex gap-10 p-20 md:overflow-x-hidden max-md:[&::-webkit-scrollbar]:hidden overflow-x-auto scrollbar-none scroll-smooth snap-x snap-mandatory"
+          className="flex gap-10 p-20 md:pt-12  pt-4 md:overflow-x-hidden max-md:[&::-webkit-scrollbar]:hidden overflow-x-auto scrollbar-none scroll-smooth snap-x snap-mandatory"
         >
           {projects.map((item) => {
             const isExpanded = expanded[item._id];
@@ -91,24 +123,22 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
                     alt="cover"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent" />
                 </div>
 
                 <div className="p-6 flex flex-col flex-grow justify-between">
                   <div>
                     <h1
-                      className={`font-semibold tracking-tight lg:text-2xl md:text-xl text-lg mb-2 ${
-                        isFarsi ? "text-right" : "text-left"
-                      } text-white`}
+                      className={`font-semibold tracking-tight lg:text-2xl md:text-xl text-lg mb-2
+                      ${isFarsi ? "text-right" : "text-left"} text-white`}
                     >
                       {item.title[lang]}
                     </h1>
 
                     <div className={`relative ${!isExpanded ? "line-clamp-3" : ""}`}>
                       <p
-                        className={`text-sm leading-relaxed ${
-                          isFarsi ? "text-right" : "text-left"
-                        } text-gray-300`}
+                        className={`text-sm leading-relaxed
+                        ${isFarsi ? "text-right" : "text-left"} text-gray-300`}
                       >
                         {item.des[lang]}
                       </p>
@@ -140,9 +170,8 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
                   </div>
 
                   <div
-                    className={`flex items-center justify-between mt-6 ${
-                      isFarsi ? "flex-row-reverse" : ""
-                    }`}
+                    className={`flex items-center justify-between mt-6
+                    ${isFarsi ? "flex-row-reverse" : ""}`}
                   >
                     <div className="flex items-center">
                       {item.iconLists.map((icon: string, index: number) => (
@@ -152,9 +181,7 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
                           rounded-full bg-white/60 dark:bg-purple-950/20
                           backdrop-blur-md w-9 h-9 flex justify-center items-center
                           transition-all duration-300 group-hover:dark:bg-purple-900/30"
-                          style={{
-                            transform: `translateX(-${5 * index}px)`,
-                          }}
+                          style={{ transform: `translateX(-${5 * index}px)` }}
                         >
                           <img src={icon} alt="icon" className="w-4 h-4" />
                         </div>
@@ -178,10 +205,12 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
           })}
         </div>
 
+        {/* Arrows */}
         {canScrollLeft && (
           <button
             onClick={() => scroll("left")}
-            className="absolute top-1/2 -translate-y-1/2 left-0 p-3 rounded-full bg-gradient-to-r from-black/40 to-transparent text-white hover:from-black/60 transition"
+            className="absolute top-1/2 -translate-y-1/2 left-0 p-3 rounded-full
+            bg-gradient-to-r from-black/40 to-transparent text-white hover:from-black/60 transition"
           >
             <FaChevronLeft size={20} />
           </button>
@@ -190,11 +219,28 @@ const Projects = ({ projects, lang }: ProjectsProps) => {
         {canScrollRight && (
           <button
             onClick={() => scroll("right")}
-            className="absolute top-1/2 -translate-y-1/2 right-0 p-3 rounded-full bg-gradient-to-l from-black/40 to-transparent text-white hover:from-black/60 transition"
+            className="absolute top-1/2 -translate-y-1/2 right-0 p-3 rounded-full
+            bg-gradient-to-l from-black/40 to-transparent text-white hover:from-black/60 transition"
           >
             <FaChevronRight size={20} />
           </button>
         )}
+      </div>
+
+      {/* Mobile-only CTA */}
+      <div
+        className={`text-center mx-auto w-[200px] mt-6 px-4 ${
+          isFarsi ? "text-right" : "text-left"
+        }`}
+      >
+        <Link
+          href={isFarsi ? "/Pe/Projects" : "/Projects"}
+          className="inline-flex items-center gap-2 text-sm font-medium
+          text-purple-400 hover:text-purple-300 transition-colors"
+        >
+          {isFarsi ? "مشاهده همه پروژه‌ها" : "View all projects"}
+          <FaLocationArrow />
+        </Link>
       </div>
     </div>
   );

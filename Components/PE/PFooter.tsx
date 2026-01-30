@@ -21,7 +21,7 @@ const PFooter = () => {
         اماده ای تا بیزینست رو با دنیای دیجیتال  به یه لول دیگه ارتقا بدی ؟
         </h1>
         <p className="text-white  light:text-[#3B3B3B] md:mt-10 my-5 text-center">
-         همین امروز با من تماس بگیر ,  در مورد رویا و کارت صحبت کنیم
+       همین امروز با من تماس بگیر ,  تا در موردش گپی باهم بزنیم
         </p>
         <Link href={"/Pe/ContactMe"}>
           <MagicButton
