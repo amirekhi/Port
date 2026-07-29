@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { createProject } from "./actions";
-import { uploadImage } from "@/lib/uploadImage";
+import { storage } from "@/lib/storage";
 
 export default function AddProjectPage() {
   const [file, setFile] = useState<File | null>(null);
@@ -27,7 +27,7 @@ export default function AddProjectPage() {
 
     startTransition(async () => {
       try {
-        const imageUrl = await uploadImage(file);
+        const imageUrl = await storage.uploadImage(file);
 
         await createProject({
           title: { en: titleEn, fa: titleFa },

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { getProjectById, updateProject } from "../../AddProject/actions";
-import { uploadImage } from "@/lib/uploadImage";
+import { storage } from "@/lib/storage";
 
 const iconOptions = [
   { label: "React", value: "/tech/reactjs.png" },
@@ -58,7 +58,7 @@ const EditProject = () => {
     try {
       let imageUrl = project.img;
       if (file) {
-        imageUrl = await uploadImage(file);
+        imageUrl = await storage.uploadImage(file);
       }
 
       const updatedProject = await updateProject(id as string, {
